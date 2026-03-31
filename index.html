@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Run the Docs</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --bg: #080810;
+      --accent: #326CE5;
+      --accent-light: #60a5fa;
+      --text: #f8fafc;
+      --code-bg: #0d1117;
+      --green: #22c55e;
+      --muted: #8b92a5;
+      --card-border: rgba(50, 108, 229, 0.3);
+      --font: 'JetBrains Mono', monospace;
+    }
+
+    html {
+      font-family: var(--font);
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+    }
+
+    body {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* ── Header ── */
+    header {
+      padding: 4rem 0 3rem;
+      text-align: center;
+    }
+
+    .logo {
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1;
+      margin-bottom: 1rem;
+    }
+
+    .logo .docs {
+      color: var(--accent);
+    }
+
+    .tagline {
+      font-size: 0.95rem;
+      color: var(--muted);
+      letter-spacing: 0.04em;
+    }
+
+    /* ── Series section ── */
+    .series {
+      margin-bottom: 5rem;
+    }
+
+    .series-header {
+      margin-bottom: 2rem;
+    }
+
+    .series-title {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--accent);
+      letter-spacing: -0.01em;
+      margin-bottom: 0.4rem;
+    }
+
+    .series-meta {
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    /* ── Episode grid ── */
+    .episode-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.25rem;
+    }
+
+    @media (max-width: 768px) {
+      .episode-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (min-width: 769px) and (max-width: 1024px) {
+      .episode-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    /* ── Episode card ── */
+    .card {
+      background: var(--code-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 8px;
+      padding: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+      position: relative;
+    }
+
+    .card:hover {
+      border-color: var(--accent);
+      box-shadow: 0 0 16px rgba(50, 108, 229, 0.25);
+    }
+
+    .card-top {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.85rem;
+    }
+
+    .episode-badge {
+      background: var(--accent);
+      color: #fff;
+      font-size: 0.7rem;
+      font-weight: 700;
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+      letter-spacing: 0.05em;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .episode-title {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--text);
+      line-height: 1.35;
+    }
+
+    .card-actions {
+      display: flex;
+      gap: 0.65rem;
+      margin-top: auto;
+    }
+
+    .btn-watch {
+      font-family: var(--font);
+      font-size: 0.78rem;
+      font-weight: 500;
+      padding: 0.4rem 0.85rem;
+      border-radius: 5px;
+      border: 1px solid #2a2d3a;
+      background: #12131f;
+      color: #4a5068;
+      cursor: not-allowed;
+      flex: 1;
+      text-align: center;
+      letter-spacing: 0.02em;
+    }
+
+    .btn-docs {
+      font-family: var(--font);
+      font-size: 0.78rem;
+      font-weight: 500;
+      padding: 0.4rem 0.85rem;
+      border-radius: 5px;
+      border: 1px solid rgba(50, 108, 229, 0.5);
+      background: transparent;
+      color: var(--accent-light);
+      text-decoration: none;
+      flex: 1;
+      text-align: center;
+      letter-spacing: 0.02em;
+      transition: background 0.15s ease, border-color 0.15s ease;
+    }
+
+    .btn-docs:hover {
+      background: rgba(50, 108, 229, 0.12);
+      border-color: var(--accent);
+    }
+
+    /* ── Footer ── */
+    footer {
+      border-top: 1px solid rgba(255,255,255,0.06);
+      padding: 2.5rem 0 3rem;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+
+    .footer-main {
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    .footer-github a {
+      font-size: 0.82rem;
+      color: var(--accent-light);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+
+    .footer-github a:hover {
+      color: var(--text);
+    }
+
+    .footer-disclaimer {
+      font-size: 0.72rem;
+      color: #4a5068;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Run the <span class="docs">Docs</span></div>
+    <p class="tagline">60 seconds. One concept. From the actual docs.</p>
+  </header>
+
+  <main>
+    <section class="series">
+      <div class="series-header">
+        <h2 class="series-title">kubernetes</h2>
+        <p class="series-meta">11 episodes · kubernetes.io/docs</p>
+      </div>
+
+      <div class="episode-grid">
+
+        <div class="card">
+          <div class="card-top">
+            <span class="episode-badge">01</span>
+            <span class="episode-title">What is Kubernetes</span>
+          </div>
+          <div class="card-actions">
+            <span class="btn-watch">▶ YouTube coming soon</span>
+            <a class="btn-docs" href="https://kubernetes.io/docs/concepts/overview/" target="_blank" rel="noopener">Docs ↗</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-top">
+            <span class="episode-badge">02</span>
+            <span class="episode-title">Cluster Components</span>
+          </div>
+          <div class="card-actions">
+            <span class="btn-watch">▶ YouTube coming soon</span>
+            <a class="btn-docs" href="https://kubernetes.io/docs/concepts/architecture/" target="_blank" rel="noopener">Docs ↗</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-top">
+            <span class="episode-badge">03</span>
+            <span class="episode-title">Pods</span>
+          </div>
+          <div class="card-actions">
+            <span class="btn-watch">▶ YouTube coming soon</span>
+            <a class="btn-docs" href="https://kubernetes.io/docs/concepts/workloads/pods/" target="_blank" rel="noopener">Docs ↗</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-top">
+            <span class="episode-badge">04</span>
+            <span class="episode-title">Deployments</span>
+          </div>
+          <div class="card-actions">
+            <span class="btn-watch">▶ YouTube coming soon</span>
+            <a class="btn-docs" href="https://kubernetes.io/docs/concepts/workloads/controllers/deployment/" target="_blank" rel="noopener">Docs ↗</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-top">
+            <span class="episode-badge">05</span>
+            <span class="episode-title">Services</span>
+          </div>
+          <div class="card-actions">
+            <span class="btn-watch">▶ YouTube coming soon</span>
+            <a class="btn-docs" href="https://kubernetes.io/docs/concepts/services-networking/service/" target="_blank" rel="noopener">Docs ↗</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-top">
+            <span class="episode-badge">06</span>
+            <span class="episode-title">ConfigMaps</span>
+          </div>
+          <div class="card-actions">
+            <span class="btn-watch">▶ YouTube coming soon</span>
+            <a class="btn-docs" href="https://kubernetes.io/docs/concepts/configuration/configmap/" target="_blank" rel="noopener">Docs ↗</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-top">
+            <span class="episode-badge">07</span>
+            <span class="episode-title">Secrets</span>
+          </div>
+          <div class="card-actions">
+            <span class="btn-watch">▶ YouTube coming soon</span>
+            <a class="btn-docs" href="https://kubernetes.io/docs/concepts/configuration/secret/" target="_blank" rel="noopener">Docs ↗</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-top">
+            <span class="episode-badge">08</span>
+            <span class="episode-title">Persistent Volumes</span>
+          </div>
+          <div class="card-actions">
+            <span class="btn-watch">▶ YouTube coming soon</span>
+            <a class="btn-docs" href="https://kubernetes.io/docs/concepts/storage/persistent-volumes/" target="_blank" rel="noopener">Docs ↗</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-top">
+            <span class="episode-badge">09</span>
+            <span class="episode-title">Ingress</span>
+          </div>
+          <div class="card-actions">
+            <span class="btn-watch">▶ YouTube coming soon</span>
+            <a class="btn-docs" href="https://kubernetes.io/docs/concepts/services-networking/ingress/" target="_blank" rel="noopener">Docs ↗</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-top">
+            <span class="episode-badge">10</span>
+            <span class="episode-title">StatefulSets</span>
+          </div>
+          <div class="card-actions">
+            <span class="btn-watch">▶ YouTube coming soon</span>
+            <a class="btn-docs" href="https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/" target="_blank" rel="noopener">Docs ↗</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-top">
+            <span class="episode-badge">11</span>
+            <span class="episode-title">DaemonSets &amp; Jobs</span>
+          </div>
+          <div class="card-actions">
+            <span class="btn-watch">▶ YouTube coming soon</span>
+            <a class="btn-docs" href="https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/" target="_blank" rel="noopener">Docs ↗</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p class="footer-main">Run the Docs — from the source, not the summary</p>
+    <p class="footer-github"><a href="https://github.com/run-the-docs/kubernetes" target="_blank" rel="noopener">github.com/run-the-docs/kubernetes</a></p>
+    <p class="footer-disclaimer">Videos generated with AI. Facts sourced from official documentation.</p>
+  </footer>
+
+</body>
+</html>
