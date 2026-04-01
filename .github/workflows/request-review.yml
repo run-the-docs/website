@@ -1,0 +1,87 @@
+name: Request Review-E Review
+
+on:
+  pull_request:
+    types: [opened, reopened, ready_for_review, synchronize, closed]
+    branches: [main]
+
+jobs:
+  request-review:
+    name: Request Review-E
+    runs-on: ubuntu-latest
+    if: >-
+      github.event.action != 'closed' &&
+      !github.event.pull_request.draft &&
+      !contains(github.event.pull_request.labels.*.name, 'manual-merge')
+    permissions:
+      pull-requests: write
+      issues: write
+
+    steps:
+      - name: Request review from Review-E
+        uses: actions/github-script@v8
+        with:
+          script: |
+            try {
+              await github.rest.pulls.requestReviewers({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                pull_number: context.payload.pull_request.number,
+                reviewers: ['review-e-dashecorp']
+              });
+              console.log('Requested review from Review-E');
+            } catch (error) {
+              console.log(`Failed: ${error.message}`);
+            }
+
+      - name: Notify Review-E in Discord
+        if: github.event.action != 'synchronize'
+        env:
+          WEBHOOK_URL: ${{ secrets.REVIEW_E_DISCORD_WEBHOOK }}
+        uses: actions/github-script@v8
+        with:
+          script: |
+            const webhookUrl = process.env.WEBHOOK_URL;
+            if (!webhookUrl) { console.log('No webhook, skipping'); return; }
+            const pr = context.payload.pull_request;
+            const msg = `**PR ready for review:** ${context.repo.repo} #${pr.number}\n**Title:** ${pr.title}\n**Author:** \`${pr.user.login}\`\n**Link:** ${pr.html_url}`;
+            await fetch(webhookUrl, {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ content: msg })
+            });
+
+  auto-merge:
+    name: Auto-merge after approval
+    runs-on: ubuntu-latest
+    if: github.event.action == 'closed' && github.event.pull_request.merged == false
+    steps:
+      - run: echo "PR closed without merge"
+
+  merge-on-approve:
+    name: Enable auto-merge
+    runs-on: ubuntu-latest
+    if: >-
+      github.event.action != 'closed'
+    permissions:
+      pull-requests: write
+      contents: write
+    steps:
+      - name: Enable auto-merge
+        uses: actions/github-script@v8
+        with:
+          script: |
+            const pr = context.payload.pull_request;
+            try {
+              await github.graphql(`
+                mutation {
+                  enablePullRequestAutoMerge(input: {
+                    pullRequestId: "${pr.node_id}",
+                    mergeMethod: SQUASH
+                  }) { clientMutationId }
+                }
+              `);
+              console.log('Auto-merge enabled');
+            } catch (e) {
+              console.log(`Auto-merge failed: ${e.message}`);
+            }
