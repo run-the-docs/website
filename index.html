@@ -159,13 +159,19 @@
       font-weight: 500;
       padding: 0.4rem 0.85rem;
       border-radius: 5px;
-      border: 1px solid #2a2d3a;
-      background: #12131f;
-      color: #4a5068;
-      cursor: not-allowed;
+      border: 1px solid rgba(239, 68, 68, 0.4);
+      background: transparent;
+      color: #f87171;
+      text-decoration: none;
       flex: 1;
       text-align: center;
       letter-spacing: 0.02em;
+      transition: background 0.15s ease, border-color 0.15s ease;
+    }
+
+    .btn-watch:hover {
+      background: rgba(239, 68, 68, 0.12);
+      border-color: #ef4444;
     }
 
     .btn-docs {
@@ -232,7 +238,7 @@
     <section class="series">
       <div class="series-header">
         <h2 class="series-title">kubernetes</h2>
-        <p class="series-meta">11 episodes · kubernetes.io/docs</p>
+        <p class="series-meta">11 episodes · kubernetes.io/docs · <a href="https://www.youtube.com/playlist?list=PLdv4kqmXd-vVPLhuw8avEjDD7Tf5TrTES" target="_blank" rel="noopener" style="color:var(--accent-light);text-decoration:none;">playlist ↗</a></p>
       </div>
 
       <div class="episode-grid">
@@ -243,7 +249,7 @@
             <span class="episode-title">What is Kubernetes</span>
           </div>
           <div class="card-actions">
-            <span class="btn-watch">▶ YouTube coming soon</span>
+            <a class="btn-watch" href="https://youtu.be/oeZeViBO-34" target="_blank" rel="noopener">▶ Watch</a>
             <a class="btn-docs" href="https://kubernetes.io/docs/concepts/overview/" target="_blank" rel="noopener">Docs ↗</a>
           </div>
         </div>
@@ -254,7 +260,7 @@
             <span class="episode-title">Cluster Components</span>
           </div>
           <div class="card-actions">
-            <span class="btn-watch">▶ YouTube coming soon</span>
+            <a class="btn-watch" href="https://youtu.be/jzHthuaaJDE" target="_blank" rel="noopener">▶ Watch</a>
             <a class="btn-docs" href="https://kubernetes.io/docs/concepts/architecture/" target="_blank" rel="noopener">Docs ↗</a>
           </div>
         </div>
@@ -265,7 +271,7 @@
             <span class="episode-title">Pods</span>
           </div>
           <div class="card-actions">
-            <span class="btn-watch">▶ YouTube coming soon</span>
+            <a class="btn-watch" href="https://youtu.be/3gP1jeLRG-s" target="_blank" rel="noopener">▶ Watch</a>
             <a class="btn-docs" href="https://kubernetes.io/docs/concepts/workloads/pods/" target="_blank" rel="noopener">Docs ↗</a>
           </div>
         </div>
@@ -276,7 +282,7 @@
             <span class="episode-title">Deployments</span>
           </div>
           <div class="card-actions">
-            <span class="btn-watch">▶ YouTube coming soon</span>
+            <a class="btn-watch" href="https://youtu.be/RF4ntSQ_pgA" target="_blank" rel="noopener">▶ Watch</a>
             <a class="btn-docs" href="https://kubernetes.io/docs/concepts/workloads/controllers/deployment/" target="_blank" rel="noopener">Docs ↗</a>
           </div>
         </div>
@@ -287,7 +293,7 @@
             <span class="episode-title">Services</span>
           </div>
           <div class="card-actions">
-            <span class="btn-watch">▶ YouTube coming soon</span>
+            <a class="btn-watch" href="https://youtu.be/wnU00LpKbfI" target="_blank" rel="noopener">▶ Watch</a>
             <a class="btn-docs" href="https://kubernetes.io/docs/concepts/services-networking/service/" target="_blank" rel="noopener">Docs ↗</a>
           </div>
         </div>
@@ -298,7 +304,7 @@
             <span class="episode-title">ConfigMaps</span>
           </div>
           <div class="card-actions">
-            <span class="btn-watch">▶ YouTube coming soon</span>
+            <a class="btn-watch" href="https://youtu.be/jxyX_3lViyU" target="_blank" rel="noopener">▶ Watch</a>
             <a class="btn-docs" href="https://kubernetes.io/docs/concepts/configuration/configmap/" target="_blank" rel="noopener">Docs ↗</a>
           </div>
         </div>
@@ -309,7 +315,7 @@
             <span class="episode-title">Secrets</span>
           </div>
           <div class="card-actions">
-            <span class="btn-watch">▶ YouTube coming soon</span>
+            <a class="btn-watch" href="https://youtu.be/iKiU2DXgrRE" target="_blank" rel="noopener">▶ Watch</a>
             <a class="btn-docs" href="https://kubernetes.io/docs/concepts/configuration/secret/" target="_blank" rel="noopener">Docs ↗</a>
           </div>
         </div>
@@ -320,7 +326,7 @@
             <span class="episode-title">Persistent Volumes</span>
           </div>
           <div class="card-actions">
-            <span class="btn-watch">▶ YouTube coming soon</span>
+            <a class="btn-watch" href="https://youtu.be/NQ06EXGPxXg" target="_blank" rel="noopener">▶ Watch</a>
             <a class="btn-docs" href="https://kubernetes.io/docs/concepts/storage/persistent-volumes/" target="_blank" rel="noopener">Docs ↗</a>
           </div>
         </div>
@@ -331,7 +337,7 @@
             <span class="episode-title">Ingress</span>
           </div>
           <div class="card-actions">
-            <span class="btn-watch">▶ YouTube coming soon</span>
+            <a class="btn-watch" href="https://youtu.be/HRCcIP-IMHM" target="_blank" rel="noopener">▶ Watch</a>
             <a class="btn-docs" href="https://kubernetes.io/docs/concepts/services-networking/ingress/" target="_blank" rel="noopener">Docs ↗</a>
           </div>
         </div>
@@ -342,7 +348,7 @@
             <span class="episode-title">StatefulSets</span>
           </div>
           <div class="card-actions">
-            <span class="btn-watch">▶ YouTube coming soon</span>
+            <a class="btn-watch" href="https://youtu.be/vO6UTF7e0y8" target="_blank" rel="noopener">▶ Watch</a>
             <a class="btn-docs" href="https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/" target="_blank" rel="noopener">Docs ↗</a>
           </div>
         </div>
@@ -353,8 +359,129 @@
             <span class="episode-title">DaemonSets &amp; Jobs</span>
           </div>
           <div class="card-actions">
-            <span class="btn-watch">▶ YouTube coming soon</span>
+            <a class="btn-watch" href="https://youtu.be/c0fmmkcb0BU" target="_blank" rel="noopener">▶ Watch</a>
             <a class="btn-docs" href="https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/" target="_blank" rel="noopener">Docs ↗</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="series">
+      <div class="series-header">
+        <h2 class="series-title">react</h2>
+        <p class="series-meta">10 episodes · react.dev/learn · <a href="https://www.youtube.com/playlist?list=PLdv4kqmXd-vXCpWN_G3CDkmzGpjZIA4K8" target="_blank" rel="noopener" style="color:var(--accent-light);text-decoration:none;">playlist ↗</a></p>
+      </div>
+
+      <div class="episode-grid">
+
+        <div class="card">
+          <div class="card-top">
+            <span class="episode-badge">01</span>
+            <span class="episode-title">Your First Component</span>
+          </div>
+          <div class="card-actions">
+            <a class="btn-watch" href="https://youtu.be/qQ5uCIAF5P8" target="_blank" rel="noopener">▶ Watch</a>
+            <a class="btn-docs" href="https://react.dev/learn/your-first-component" target="_blank" rel="noopener">Docs ↗</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-top">
+            <span class="episode-badge">02</span>
+            <span class="episode-title">Importing and Exporting</span>
+          </div>
+          <div class="card-actions">
+            <a class="btn-watch" href="https://youtu.be/XeQM8-wRM0E" target="_blank" rel="noopener">▶ Watch</a>
+            <a class="btn-docs" href="https://react.dev/learn/importing-and-exporting-components" target="_blank" rel="noopener">Docs ↗</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-top">
+            <span class="episode-badge">03</span>
+            <span class="episode-title">Writing Markup with JSX</span>
+          </div>
+          <div class="card-actions">
+            <a class="btn-watch" href="https://youtu.be/qAcfUe5X3a8" target="_blank" rel="noopener">▶ Watch</a>
+            <a class="btn-docs" href="https://react.dev/learn/writing-markup-with-jsx" target="_blank" rel="noopener">Docs ↗</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-top">
+            <span class="episode-badge">04</span>
+            <span class="episode-title">JavaScript in JSX</span>
+          </div>
+          <div class="card-actions">
+            <a class="btn-watch" href="https://youtu.be/7KCZN2CMdt0" target="_blank" rel="noopener">▶ Watch</a>
+            <a class="btn-docs" href="https://react.dev/learn/javascript-in-jsx-with-curly-braces" target="_blank" rel="noopener">Docs ↗</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-top">
+            <span class="episode-badge">05</span>
+            <span class="episode-title">Passing Props</span>
+          </div>
+          <div class="card-actions">
+            <a class="btn-watch" href="https://youtu.be/hTlsm55viAI" target="_blank" rel="noopener">▶ Watch</a>
+            <a class="btn-docs" href="https://react.dev/learn/passing-props-to-a-component" target="_blank" rel="noopener">Docs ↗</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-top">
+            <span class="episode-badge">06</span>
+            <span class="episode-title">State</span>
+          </div>
+          <div class="card-actions">
+            <a class="btn-watch" href="https://youtu.be/9YJpxIVBOTA" target="_blank" rel="noopener">▶ Watch</a>
+            <a class="btn-docs" href="https://react.dev/learn/state-a-components-memory" target="_blank" rel="noopener">Docs ↗</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-top">
+            <span class="episode-badge">07</span>
+            <span class="episode-title">Responding to Events</span>
+          </div>
+          <div class="card-actions">
+            <a class="btn-watch" href="https://youtu.be/x6_Hpeieaqo" target="_blank" rel="noopener">▶ Watch</a>
+            <a class="btn-docs" href="https://react.dev/learn/responding-to-events" target="_blank" rel="noopener">Docs ↗</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-top">
+            <span class="episode-badge">08</span>
+            <span class="episode-title">Conditional Rendering</span>
+          </div>
+          <div class="card-actions">
+            <a class="btn-watch" href="https://youtu.be/QfthhBdbZik" target="_blank" rel="noopener">▶ Watch</a>
+            <a class="btn-docs" href="https://react.dev/learn/conditional-rendering" target="_blank" rel="noopener">Docs ↗</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-top">
+            <span class="episode-badge">09</span>
+            <span class="episode-title">Rendering Lists</span>
+          </div>
+          <div class="card-actions">
+            <a class="btn-watch" href="https://youtu.be/PwQudt1sm7o" target="_blank" rel="noopener">▶ Watch</a>
+            <a class="btn-docs" href="https://react.dev/learn/rendering-lists" target="_blank" rel="noopener">Docs ↗</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-top">
+            <span class="episode-badge">10</span>
+            <span class="episode-title">Keeping Components Pure</span>
+          </div>
+          <div class="card-actions">
+            <a class="btn-watch" href="https://youtu.be/q-4DpHmUUxo" target="_blank" rel="noopener">▶ Watch</a>
+            <a class="btn-docs" href="https://react.dev/learn/keeping-components-pure" target="_blank" rel="noopener">Docs ↗</a>
           </div>
         </div>
 
