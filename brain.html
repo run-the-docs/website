@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brain · Run the Docs</title>
+  <meta name="description" content="The Run the Docs brain — a single-page index of the platform: what it is, the series catalog, the topic repos, and how the pipeline runs." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #080810;
+      --accent: #326CE5;
+      --accent-light: #60a5fa;
+      --clay: #da7756;
+      --text: #f8fafc;
+      --muted: #8b92a5;
+      --card-border: rgba(50, 108, 229, 0.3);
+      --font: 'JetBrains Mono', monospace;
+    }
+
+    html { font-family: var(--font); background: var(--bg); color: var(--text); min-height: 100vh; }
+    body { max-width: 1000px; margin: 0 auto; padding: 0 1.5rem 5rem; }
+    a { color: var(--accent-light); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .nav { padding: 2rem 0 0; font-size: 0.85rem; }
+    header { padding: 3rem 0 1rem; text-align: center; }
+    .logo { font-size: clamp(1.8rem, 5vw, 2.8rem); font-weight: 700; letter-spacing: -0.02em; line-height: 1; }
+    .logo .docs { color: var(--clay); }
+    .logo .brain { color: var(--accent-light); }
+    .tagline { margin-top: 0.8rem; color: var(--muted); font-size: 0.95rem; }
+    .updated { margin-top: 0.4rem; color: var(--muted); font-size: 0.75rem; }
+
+    section { margin-top: 2.6rem; }
+    h2 { font-size: 1.15rem; font-weight: 700; border-bottom: 1px solid var(--card-border); padding-bottom: 0.5rem; margin-bottom: 1rem; }
+    h2 .hash { color: var(--accent); }
+    p { line-height: 1.65; color: #dfe4ee; }
+    p + p { margin-top: 0.8rem; }
+
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 0.9rem; }
+    .card { border: 1px solid var(--card-border); border-radius: 10px; padding: 1rem; background: rgba(50, 108, 229, 0.04); }
+    .card h3 { font-size: 0.95rem; font-weight: 700; margin-bottom: 0.3rem; }
+    .card .meta { color: var(--muted); font-size: 0.78rem; margin-bottom: 0.5rem; }
+    .card .links a { font-size: 0.8rem; margin-right: 0.8rem; }
+
+    ul.facts { list-style: none; }
+    ul.facts li { padding: 0.45rem 0; border-bottom: 1px solid rgba(139, 146, 165, 0.15); font-size: 0.88rem; }
+    ul.facts li:last-child { border-bottom: none; }
+    ul.facts .k { color: var(--accent-light); }
+
+    .pills { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .pill { border: 1px solid var(--card-border); border-radius: 999px; padding: 0.3rem 0.8rem; font-size: 0.8rem; color: #dfe4ee; }
+
+    footer { margin-top: 3.5rem; text-align: center; color: var(--muted); font-size: 0.78rem; }
+  </style>
+</head>
+<body>
+  <p class="nav"><a href="index.html">← All series</a> · <a href="videos.html">Videos</a></p>
+
+  <header>
+    <div class="logo">Run the <span class="docs">Docs</span> · <span class="brain">Brain</span></div>
+    <p class="tagline">One concept. From the actual docs.</p>
+    <p class="updated">A single-page index of the platform.</p>
+  </header>
+
+  <section>
+    <h2><span class="hash">#</span> What it is</h2>
+    <p>Run the Docs turns documentation into short, single-concept videos — each one built straight from the official docs. Every episode is rendered in two formats (a 4:5 feed cut and a 9:16 vertical) and published both <a href="videos.html">self-hosted on this site</a> and to the <a href="https://www.youtube.com/@RuntheDocs" target="_blank" rel="noopener">@RuntheDocs</a> YouTube channel.</p>
+  </section>
+
+  <section>
+    <h2><span class="hash">#</span> Series catalog</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Claude Code</h3>
+        <p class="meta">21 episodes · flagship series</p>
+        <p class="links">
+          <a href="videos.html">Watch ↗</a>
+          <a href="https://github.com/run-the-docs/claude-code" target="_blank" rel="noopener">Repo ↗</a>
+        </p>
+      </div>
+      <div class="card">
+        <h3>Kubernetes</h3>
+        <p class="meta">11 episodes · kubernetes.io/docs</p>
+        <p class="links">
+          <a href="https://www.youtube.com/playlist?list=PLdv4kqmXd-vVPLhuw8avEjDD7Tf5TrTES" target="_blank" rel="noopener">Playlist ↗</a>
+          <a href="https://github.com/run-the-docs/kubernetes" target="_blank" rel="noopener">Repo ↗</a>
+        </p>
+      </div>
+      <div class="card">
+        <h3>React</h3>
+        <p class="meta">10 episodes · react.dev/learn</p>
+        <p class="links">
+          <a href="https://www.youtube.com/playlist?list=PLdv4kqmXd-vXCpWN_G3CDkmzGpjZIA4K8" target="_blank" rel="noopener">Playlist ↗</a>
+          <a href="https://github.com/run-the-docs/react" target="_blank" rel="noopener">Repo ↗</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="hash">#</span> Topic repos</h2>
+    <p>The platform is split across these repositories under <a href="https://github.com/run-the-docs" target="_blank" rel="noopener">github.com/run-the-docs</a>:</p>
+    <div class="pills" style="margin-top:1rem;">
+      <a class="pill" href="https://github.com/run-the-docs/engine" target="_blank" rel="noopener">engine</a>
+      <a class="pill" href="https://github.com/run-the-docs/website" target="_blank" rel="noopener">website</a>
+      <a class="pill" href="https://github.com/run-the-docs/claude-code" target="_blank" rel="noopener">claude-code</a>
+      <a class="pill" href="https://github.com/run-the-docs/react" target="_blank" rel="noopener">react</a>
+      <a class="pill" href="https://github.com/run-the-docs/kubernetes" target="_blank" rel="noopener">kubernetes</a>
+      <a class="pill" href="https://github.com/run-the-docs/openclaw" target="_blank" rel="noopener">openclaw</a>
+      <a class="pill" href="https://github.com/run-the-docs/hono" target="_blank" rel="noopener">hono</a>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="hash">#</span> How it runs</h2>
+    <ul class="facts">
+      <li><span class="k">Source of truth</span> — each episode is built from the concept's official documentation page.</li>
+      <li><span class="k">Formats</span> — every episode renders to both 4:5 (feed) and 9:16 (vertical).</li>
+      <li><span class="k">Hosting</span> — self-hosted on this site (Cloudflare Pages) and on YouTube <a href="https://www.youtube.com/@RuntheDocs" target="_blank" rel="noopener">@RuntheDocs</a>.</li>
+      <li><span class="k">Release</span> — episodes are scheduled as a steady drip rather than dropped all at once.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="hash">#</span> Surfaces</h2>
+    <div class="grid">
+      <div class="card"><h3>Docs</h3><p class="links"><a href="index.html">This site ↗</a></p></div>
+      <div class="card"><h3>Videos</h3><p class="links"><a href="videos.html">On-site gallery ↗</a> · <a href="https://www.youtube.com/@RuntheDocs" target="_blank" rel="noopener">YouTube ↗</a></p></div>
+      <div class="card"><h3>Files</h3><p class="links"><a href="https://github.com/run-the-docs" target="_blank" rel="noopener">GitHub org ↗</a></p></div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Run the Docs · <a href="https://github.com/run-the-docs" target="_blank" rel="noopener">github.com/run-the-docs</a></p>
+  </footer>
+</body>
+</html>
