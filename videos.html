@@ -60,6 +60,23 @@
     .video-links a:hover { border-color: var(--accent); }
 
     footer { text-align: center; color: var(--muted); font-size: 0.8rem; padding: 2rem 0 3rem; }
+
+    /* Share kit (per-card download + per-platform caption + posted status) */
+    .share { border-top: 1px solid var(--card-border); margin-top: 0.75rem; padding-top: 0.4rem; }
+    .share-toggle { background: none; border: none; color: var(--accent-light); font-family: inherit; font-size: 0.8rem; font-weight: 700; cursor: pointer; padding: 0.4rem 0; width: 100%; text-align: left; }
+    .share-body { display: flex; flex-direction: column; gap: 0.6rem; padding: 0.3rem 0 0.5rem; }
+    .share-body.hidden { display: none; }
+    .share-note { font-size: 0.68rem; color: var(--muted); }
+    .share-row { border: 1px solid var(--card-border); border-radius: 8px; padding: 0.55rem 0.6rem; }
+    .share-row-head { display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; margin-bottom: 0.4rem; }
+    .share-plat { font-size: 0.76rem; font-weight: 700; color: var(--text); }
+    .share-plat .fmt { color: var(--muted); font-weight: 400; font-size: 0.68rem; margin-left: 0.35rem; }
+    .posted-btn { font-size: 0.66rem; font-family: inherit; border-radius: 999px; padding: 2px 9px; cursor: pointer; border: 1px solid var(--card-border); background: transparent; color: var(--muted); white-space: nowrap; }
+    .posted-btn.posted { color: var(--accent-light); border-color: var(--accent-light); }
+    .share-cap { width: 100%; box-sizing: border-box; background: var(--bg); color: var(--text); border: 1px solid var(--card-border); border-radius: 6px; font-family: inherit; font-size: 0.73rem; line-height: 1.45; padding: 0.5rem; resize: vertical; min-height: 4.5em; }
+    .share-actions { display: flex; flex-wrap: wrap; gap: 0.45rem; margin-top: 0.4rem; }
+    .share-actions button, .share-actions a { font-size: 0.72rem; font-family: inherit; text-decoration: none; color: var(--text); border: 1px solid var(--card-border); border-radius: 6px; padding: 4px 10px; cursor: pointer; background: transparent; }
+    .share-actions button:hover, .share-actions a:hover { border-color: var(--accent); }
   </style>
 </head>
 <body>
@@ -334,6 +351,128 @@
   </main>
 
   <footer>Run the Docs · self-hosted on Cloudflare Pages</footer>
+
+  <script>
+  // Per-video Share kit: download + per-platform caption + posted status.
+  // Captions come from videos/share-kit.json (generated). Posted status persists
+  // in localStorage (per browser) — keyed by episode + platform.
+  (function () {
+    var PLATFORMS = [
+      { key: "youtube",  label: "YouTube",                 fmt: "9:16" },
+      { key: "tiktok",   label: "TikTok / Reels / Shorts", fmt: "9:16" },
+      { key: "linkedin", label: "LinkedIn",                fmt: "4:5"  },
+      { key: "x",        label: "X",                       fmt: "4:5"  }
+    ];
+    var pkey = function (ep, p) { return "rtd-posted:" + ep + ":" + p; };
+
+    fetch("videos/share-kit.json")
+      .then(function (r) { return r.ok ? r.json() : {}; })
+      .then(function (kit) {
+        document.querySelectorAll(".clip").forEach(function (card) {
+          var epEl = card.querySelector(".clip-ep");
+          var bodyEl = card.querySelector(".clip-body");
+          if (!epEl || !bodyEl) return;
+          var ep = epEl.textContent.trim();              // "Ep 1"
+          var entry = kit[ep];
+          if (!entry || !entry.captions) return;          // only episodes with a kit
+
+          var share = document.createElement("div");
+          share.className = "share";
+
+          var toggle = document.createElement("button");
+          toggle.className = "share-toggle";
+          toggle.type = "button";
+          toggle.textContent = "Share ▾";
+
+          var body = document.createElement("div");
+          body.className = "share-body hidden";
+          toggle.addEventListener("click", function () {
+            var hidden = body.classList.toggle("hidden");
+            toggle.textContent = hidden ? "Share ▾" : "Share ▴";
+          });
+
+          var note = document.createElement("p");
+          note.className = "share-note";
+          note.textContent = "Downloads are the 4:5 clip. 9:16 vertical masters are produced in the pipeline (hosting: run-the-docs/website#758).";
+          body.appendChild(note);
+
+          PLATFORMS.forEach(function (plat) {
+            var caption = entry.captions[plat.key];
+            if (typeof caption !== "string") return;
+
+            var row = document.createElement("div");
+            row.className = "share-row";
+
+            var head = document.createElement("div");
+            head.className = "share-row-head";
+
+            var name = document.createElement("span");
+            name.className = "share-plat";
+            name.textContent = plat.label;
+            var fmt = document.createElement("span");
+            fmt.className = "fmt";
+            fmt.textContent = plat.fmt;
+            name.appendChild(fmt);
+
+            var posted = document.createElement("button");
+            posted.className = "posted-btn";
+            posted.type = "button";
+            var setPostedLabel = function () {
+              var on = localStorage.getItem(pkey(ep, plat.key)) === "1";
+              posted.classList.toggle("posted", on);
+              posted.textContent = on ? "Posted ✓" : "Not posted";
+            };
+            posted.addEventListener("click", function () {
+              var on = localStorage.getItem(pkey(ep, plat.key)) === "1";
+              localStorage.setItem(pkey(ep, plat.key), on ? "0" : "1");
+              setPostedLabel();
+            });
+            setPostedLabel();
+
+            head.appendChild(name);
+            head.appendChild(posted);
+
+            var ta = document.createElement("textarea");
+            ta.className = "share-cap";
+            ta.readOnly = true;
+            ta.rows = 4;
+            ta.value = caption;                            // textContent-safe assignment
+
+            var actions = document.createElement("div");
+            actions.className = "share-actions";
+
+            var copy = document.createElement("button");
+            copy.type = "button";
+            copy.textContent = "Copy caption";
+            copy.addEventListener("click", function () {
+              var done = function () { copy.textContent = "Copied ✓"; setTimeout(function () { copy.textContent = "Copy caption"; }, 1500); };
+              if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(ta.value).then(done, function () { ta.select(); done(); });
+              } else { ta.select(); try { document.execCommand("copy"); } catch (e) {} done(); }
+            });
+
+            var dl = document.createElement("a");
+            dl.href = entry.file;
+            dl.setAttribute("download", "");
+            dl.textContent = "Download clip";
+
+            actions.appendChild(copy);
+            actions.appendChild(dl);
+
+            row.appendChild(head);
+            row.appendChild(ta);
+            row.appendChild(actions);
+            body.appendChild(row);
+          });
+
+          share.appendChild(toggle);
+          share.appendChild(body);
+          bodyEl.appendChild(share);
+        });
+      })
+      .catch(function () { /* no share kit available — leave cards unchanged */ });
+  })();
+  </script>
 
 </body>
 </html>
