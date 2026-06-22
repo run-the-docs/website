@@ -6,7 +6,8 @@
       "linkedin": "Your first Claude Code session: launch claude in any repo and ask a question in plain English.\n\nIt reads your code to answer, read-only by default, so nothing gets touched. A safe way to explore an unfamiliar codebase before you change a line.\n\n#ClaudeCode #DeveloperTools #AI",
       "x": "Your first Claude Code session: run `claude` in any repo, ask in plain English, and it reads your code to answer. Read-only, nothing touched.\n\n#ClaudeCode #DevTools",
       "tiktok": "drop into any repo and just ask, it reads the code, touches nothing\n\n#claudecode #ai #coding #developer #tech #softwareengineer #vibecoding"
-    }
+    },
+    "v916": "https://pub-8745206116f440c6b36f5e6bd0eb1905.r2.dev/claude-ep1-916.mp4"
   },
   "Ep 2": {
     "file": "videos/claude-ep2-45.mp4",
@@ -15,7 +16,8 @@
       "linkedin": "Claude Code works as an agentic loop: you describe a task, it reads the relevant code and proposes a diff, you approve, then it runs the tests.\n\nThe approval step is the point. You review every change before it lands, and verification is part of the loop -- not an afterthought.\n\nRead, edit, verify, repeat.\n\n#ClaudeCode #DeveloperTools #AI",
       "x": "The Claude Code agentic loop: describe a task, it reads your code and proposes a diff, you approve, it runs the tests.\n\nRead, edit, verify. You approve every change before it lands.\n\n#ClaudeCode #AICoding",
       "tiktok": "it reads, proposes a diff you approve, then runs the tests\n\n#claudecode #ai #coding #developer #tech #softwareengineer #vibecoding"
-    }
+    },
+    "v916": "https://pub-8745206116f440c6b36f5e6bd0eb1905.r2.dev/claude-ep2-916.mp4"
   },
   "Ep 3": {
     "file": "videos/claude-ep3-45.mp4",
@@ -24,7 +26,8 @@
       "linkedin": "CLAUDE.md is a single file your agent reads at the start of every session, so it already knows your stack, conventions, and structure.\n\nRun /init to generate a first draft straight from your codebase, then trim it to what matters. Less context-setting each session means more consistent output and fewer repeated corrections.\n\n#ClaudeCode #AI #SoftwareDevelopment",
       "x": "Tired of re-explaining your project to Claude Code every session?\n\nCLAUDE.md is one file your agent reads automatically on every run. Run /init to draft it from your codebase, then refine.\n\n#ClaudeCode #AICoding",
       "tiktok": "stop re-explaining your project to your agent every single session\n\n#claudecode #ai #coding #developer #tech #softwareengineer #vibecoding"
-    }
+    },
+    "v916": "https://pub-8745206116f440c6b36f5e6bd0eb1905.r2.dev/claude-ep3-916.mp4"
   },
   "Ep 4": {
     "file": "videos/claude-ep4-45.mp4",
@@ -33,7 +36,8 @@
       "linkedin": "Plan mode in Claude Code shows the full plan before it edits anything. You review the steps, adjust them, then approve.\n\nIt matters because you stay the reviewer instead of cleaning up after surprise changes. You catch a wrong assumption at the plan stage, not in the diff.\n\n#ClaudeCode #AICoding #DeveloperTools",
       "x": "Plan mode in Claude Code: it shows the plan before touching a file. Read it, edit it, approve it, then it runs. No surprise edits. #ClaudeCode #AICoding",
       "tiktok": "see the plan before it edits a single file\n\n#claudecode #ai #coding #developer #tech #softwareengineer #vibecoding"
-    }
+    },
+    "v916": "https://pub-8745206116f440c6b36f5e6bd0eb1905.r2.dev/claude-ep4-916.mp4"
   },
   "Ep 5": {
     "file": "videos/claude-ep5-45.mp4",
@@ -42,7 +46,8 @@
       "linkedin": "Claude Code ships with built-in slash commands, and you can add your own by saving them in .claude/commands/.\n\nCommit that folder to git and every teammate gets the same commands. Shared prompts become part of the repo, not tribal knowledge in someone's notes.\n\n#ClaudeCode #DeveloperTools #AI",
       "x": "Built-in / commands in Claude Code are handy. Custom ones are better: save a prompt in .claude/commands/, commit it, and your whole team runs the same command. Shared workflows live in the repo.\n\n#ClaudeCode #DevTools",
       "tiktok": "save a prompt once, your whole team runs it as a /command\n\n#claudecode #ai #coding #developer #tech #softwareengineer #vibecoding"
-    }
+    },
+    "v916": "https://pub-8745206116f440c6b36f5e6bd0eb1905.r2.dev/claude-ep5-916.mp4"
   },
   "Ep 6": {
     "file": "videos/claude-ep6-45.mp4",
@@ -51,7 +56,8 @@
       "linkedin": "Claude Code can undo more than your last change. With /rewind (or Esc-Esc) you can roll both your code and the conversation back to any earlier checkpoint.\n\nThat means you can explore a risky change freely and step back cleanly when it doesn't work out, without manually reverting files.\n\n#ClaudeCode #DeveloperTools #AICoding",
       "x": "Bad edit in Claude Code? Rewind both your code and the conversation to any earlier point with /rewind or Esc-Esc. Explore freely, step back cleanly. #ClaudeCode #AICoding",
       "tiktok": "that one bad edit? just rewind it\n#claudecode #ai #coding #developer #tech #softwareengineer #vibecoding"
-    }
+    },
+    "v916": "https://pub-8745206116f440c6b36f5e6bd0eb1905.r2.dev/claude-ep6-916.mp4"
   },
   "Ep 7": {
     "file": "videos/claude-ep7-45.mp4",
@@ -60,7 +66,8 @@
       "linkedin": "Claude Code can run parallel subagents, each with its own context window and tool access.\n\nThat means independent tasks (refactor here, write tests there, investigate a bug) move at the same time instead of queuing behind one another, and a long-running task never pollutes your main context.\n\n#ClaudeCode #AI #DeveloperTools",
       "x": "Claude Code subagents each get their own context window and tools, so you can run separate tasks in parallel instead of one at a time. Main context stays clean while they work.\n\n#ClaudeCode #AICoding",
       "tiktok": "run multiple claude code agents at once, each in its own context\n\n#claudecode #ai #coding #developer #tech #softwareengineer #vibecoding"
-    }
+    },
+    "v916": "https://pub-8745206116f440c6b36f5e6bd0eb1905.r2.dev/claude-ep7-916.mp4"
   },
   "Ep 8": {
     "file": "videos/claude-ep8-45.mp4",
@@ -69,7 +76,8 @@
       "linkedin": "Claude Code hooks fire on lifecycle events. A PostToolUse hook runs after each file edit, so you can trigger your formatter or linter automatically on every file Claude touches.\n\nIt keeps the agent's output consistent with your project standards without you having to ask, and without a manual cleanup pass before commit.\n\n#ClaudeCode #DeveloperTools #AI",
       "x": "A PostToolUse hook in Claude Code runs after every file edit. Wire it to your formatter or linter and Claude's changes land already formatted, no manual cleanup.\n\n#ClaudeCode #DevTools",
       "tiktok": "stop reformatting after the agent, let a hook do it\n\n#claudecode #ai #coding #developer #tech #softwareengineer #vibecoding"
-    }
+    },
+    "v916": "https://pub-8745206116f440c6b36f5e6bd0eb1905.r2.dev/claude-ep8-916.mp4"
   },
   "Ep 9": {
     "file": "videos/claude-ep9-45.mp4",
@@ -78,7 +86,8 @@
       "linkedin": "MCP (Model Context Protocol) lets Claude Code talk to live systems. Add one server config and Claude can query your database, call your APIs, or control the browser.\n\nIt turns the model from a code generator into something that can act against your real tools, with the access scope you define.\n\n#ClaudeCode #MCP #DeveloperTools",
       "x": "One MCP server config and Claude Code gets live tools: query your database, call your APIs, drive the browser. No glue code in between.\n\n#ClaudeCode #MCP",
       "tiktok": "one config file and claude can hit your db, your apis, your browser\n\n#claudecode #ai #coding #developer #tech #mcp #vibecoding"
-    }
+    },
+    "v916": "https://pub-8745206116f440c6b36f5e6bd0eb1905.r2.dev/claude-ep9-916.mp4"
   },
   "Ep 10": {
     "file": "videos/claude-ep10-45.mp4",
@@ -87,7 +96,8 @@
       "linkedin": "Define a workflow once in a SKILL.md and Claude Code loads it on demand and reuses it.\n\nSkills turn the procedures you keep retyping (release steps, review checklists, scaffolding) into something Claude can pull in when the task calls for it, so you stop re-explaining and your team works from the same playbook.\n\n#ClaudeCode #DeveloperProductivity #AICoding",
       "x": "Stop re-explaining the same workflow to Claude Code. Put it in a SKILL.md once and Claude loads it on demand, then reuses it across sessions. Release steps, review checklists, scaffolding all become reusable. #ClaudeCode #AICoding",
       "tiktok": "teach claude a workflow once, reuse it forever with a SKILL.md\n#claudecode #ai #coding #developer #tech #softwareengineer #vibecoding"
-    }
+    },
+    "v916": "https://pub-8745206116f440c6b36f5e6bd0eb1905.r2.dev/claude-ep10-916.mp4"
   },
   "Ep 11": {
     "file": "videos/claude-ep11-45.mp4",
@@ -96,7 +106,8 @@
       "linkedin": "Long Claude Code sessions accumulate context until responses slow down and cost climbs.\n\nThree commands keep a session lean: /context shows what is taking up the window, /compact summarizes the history so far, and /clear resets it when you switch tasks. Reaching for the right one keeps the model focused on what actually matters.\n\n#ClaudeCode #AI #DeveloperTools",
       "x": "Keep long Claude Code sessions lean: /context to inspect what's filling the window, /compact to summarize history, /clear to reset between tasks. #ClaudeCode #AICoding",
       "tiktok": "stop letting your claude code session bloat\n#claudecode #ai #coding #developer #tech #softwareengineer #vibecoding"
-    }
+    },
+    "v916": "https://pub-8745206116f440c6b36f5e6bd0eb1905.r2.dev/claude-ep11-916.mp4"
   },
   "Ep 12": {
     "file": "videos/claude-ep12-45.mp4",
@@ -105,7 +116,8 @@
       "linkedin": "Claude Code keeps your session history. Run claude --continue to resume the last conversation, or claude --resume to pick a past session from a list. Switch sessions mid-task with /resume.\n\nThis matters because context is expensive to rebuild. Resuming keeps the full thread so you don't re-explain the codebase after every break.\n\n#ClaudeCode #DeveloperTools #AI",
       "x": "Closed Claude Code mid-task?\n\nclaude --continue  → resume the last session\nclaude --resume    → pick from past sessions\n/resume            → switch sessions in-flight\n\nFull context, no re-explaining.\n\n#ClaudeCode #AICoding",
       "tiktok": "never re-explain your codebase again, just resume the session\n\n#claudecode #ai #coding #developer #tech #softwareengineer #vibecoding"
-    }
+    },
+    "v916": "https://pub-8745206116f440c6b36f5e6bd0eb1905.r2.dev/claude-ep12-916.mp4"
   },
   "Ep 13": {
     "file": "videos/claude-ep13-45.mp4",
@@ -114,7 +126,8 @@
       "linkedin": "Claude Code has a headless mode: pipe input into `claude -p \"...\"` and it returns a single answer, then exits.\n\nThat one flag turns Claude into a building block you can drop into shell scripts, git hooks, and CI pipelines instead of a tool you sit in front of.\n\n#ClaudeCode #DeveloperTools #Automation",
       "x": "Headless mode in Claude Code:\n\ncat error.log | claude -p \"summarize the root cause\"\n\nOne-shot answer, no interactive session. Pipe it into scripts, hooks, and CI.\n\n#ClaudeCode #DevTools",
       "tiktok": "pipe anything into claude -p and get an answer, no chat session needed\n\n#claudecode #ai #coding #developer #tech #softwareengineer #devtools"
-    }
+    },
+    "v916": "https://pub-8745206116f440c6b36f5e6bd0eb1905.r2.dev/claude-ep13-916.mp4"
   },
   "Ep 14": {
     "file": "videos/claude-ep14-45.mp4",
@@ -123,7 +136,8 @@
       "linkedin": "Claude Code lets you type @ to pin a file straight into your prompt.\n\nInstead of describing where a file lives and hoping Claude finds it, you reference it directly and skip the search. Less back-and-forth, more precise context, faster answers.\n\n#ClaudeCode #DeveloperTools #AICoding",
       "x": "Type @ in Claude Code to pin a file straight into your prompt. No more describing where it lives or watching Claude hunt for it — you point, it reads. #ClaudeCode #AICoding",
       "tiktok": "stop making claude hunt for your files, just type @ and pin it\n#claudecode #ai #coding #developer #tech #softwareengineer #vibecoding"
-    }
+    },
+    "v916": "https://pub-8745206116f440c6b36f5e6bd0eb1905.r2.dev/claude-ep14-916.mp4"
   },
   "Ep 15": {
     "file": "videos/claude-ep15-45.mp4",
@@ -132,7 +146,8 @@
       "linkedin": "Before you open a PR, run /code-review in Claude Code for a bug-focused pass over your current diff.\n\nIt catches logic errors and missed edge cases while the change is still fresh in your head, so reviewers spend their time on design instead of defects.\n\n#ClaudeCode #CodeReview #SoftwareEngineering",
       "x": "Run /code-review in Claude Code to get a bug-focused review of your current diff before you ship. Catch logic errors and edge cases while the change is fresh, before a reviewer ever sees it. #ClaudeCode #DevTools",
       "tiktok": "catch the bug before your reviewer does\n#claudecode #ai #coding #developer #tech #softwareengineer #vibecoding"
-    }
+    },
+    "v916": "https://pub-8745206116f440c6b36f5e6bd0eb1905.r2.dev/claude-ep15-916.mp4"
   },
   "Ep 16": {
     "file": "videos/claude-ep16-45.mp4",
@@ -141,7 +156,8 @@
       "linkedin": "Before Claude builds anything, ask it to interview you with multiple-choice questions about the spec.\n\nYou catch ambiguity up front instead of in the diff. Picking from options is faster than writing a perfect prompt, and the answers become a clear, shared spec to build against.\n\n#ClaudeCode #AI #SoftwareEngineering",
       "x": "Ask Claude to interview you with multiple-choice questions before it builds. You nail the spec by picking options instead of writing the perfect prompt, and ambiguity gets caught up front, not in the diff. #ClaudeCode #AI",
       "tiktok": "make claude interview you before it builds anything\n#claudecode #ai #coding #developer #tech #softwareengineer #vibecoding"
-    }
+    },
+    "v916": "https://pub-8745206116f440c6b36f5e6bd0eb1905.r2.dev/claude-ep16-916.mp4"
   },
   "Ep 17": {
     "file": "videos/claude-ep17-45.mp4",

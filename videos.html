@@ -67,6 +67,7 @@
     .share-body { display: flex; flex-direction: column; gap: 0.6rem; padding: 0.3rem 0 0.5rem; }
     .share-body.hidden { display: none; }
     .share-note { font-size: 0.68rem; color: var(--muted); }
+    .share-soon { font-size: 0.72rem; color: var(--muted); font-style: italic; align-self: center; }
     .share-row { border: 1px solid var(--card-border); border-radius: 8px; padding: 0.55rem 0.6rem; }
     .share-row-head { display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; margin-bottom: 0.4rem; }
     .share-plat { font-size: 0.76rem; font-weight: 700; color: var(--text); }
@@ -393,7 +394,7 @@
 
           var note = document.createElement("p");
           note.className = "share-note";
-          note.textContent = "Downloads are the 4:5 clip. 9:16 vertical masters are produced in the pipeline (hosting: run-the-docs/website#758).";
+          note.textContent = "Vertical downloads (YouTube / TikTok) are the 9:16 cut from R2; feed downloads (LinkedIn / X) are the 4:5 clip. A few of the newest episodes' 9:16 cuts are still uploading.";
           body.appendChild(note);
 
           PLATFORMS.forEach(function (plat) {
@@ -451,13 +452,32 @@
               } else { ta.select(); try { document.execCommand("copy"); } catch (e) {} done(); }
             });
 
-            var dl = document.createElement("a");
-            dl.href = entry.file;
-            dl.setAttribute("download", "");
-            dl.textContent = "Download clip";
-
             actions.appendChild(copy);
-            actions.appendChild(dl);
+
+            if (plat.fmt === "9:16") {
+              // Vertical platforms get the 9:16 cut from R2 (not committed to git).
+              if (entry.v916) {
+                var dl = document.createElement("a");
+                dl.href = entry.v916;
+                dl.target = "_blank";
+                dl.rel = "noopener";
+                dl.setAttribute("download", "");
+                dl.textContent = "Download 9:16";
+                actions.appendChild(dl);
+              } else {
+                var soon = document.createElement("span");
+                soon.className = "share-soon";
+                soon.textContent = "9:16 uploading soon";
+                actions.appendChild(soon);
+              }
+            } else {
+              // Feed platforms use the 4:5 clip hosted on the site (true same-origin download).
+              var dl45 = document.createElement("a");
+              dl45.href = entry.file;
+              dl45.setAttribute("download", "");
+              dl45.textContent = "Download 4:5";
+              actions.appendChild(dl45);
+            }
 
             row.appendChild(head);
             row.appendChild(ta);
