@@ -354,9 +354,9 @@
   <footer>Run the Docs · self-hosted on Cloudflare Pages</footer>
 
   <script>
-  // Per-video Share kit: download + per-platform caption + posted status.
-  // Captions come from videos/share-kit.json (generated). Posted status persists
-  // in localStorage (per browser) — keyed by episode + platform.
+  // Per-video Share kit: download + per-platform caption + real posted status.
+  // Captions come from videos/share-kit.json; posted status from videos/posted.json
+  // (generated from the rtd-social D1 — real + read-only, not a per-browser toggle).
   (function () {
     var PLATFORMS = [
       { key: "youtube",  label: "YouTube",                 fmt: "9:16" },
@@ -364,11 +364,11 @@
       { key: "linkedin", label: "LinkedIn",                fmt: "4:5"  },
       { key: "x",        label: "X",                       fmt: "4:5"  }
     ];
-    var pkey = function (ep, p) { return "rtd-posted:" + ep + ":" + p; };
+    var getJSON = function (u) { return fetch(u, { cache: "no-cache" }).then(function (r) { return r.ok ? r.json() : {}; }).catch(function () { return {}; }); };
 
-    fetch("videos/share-kit.json")
-      .then(function (r) { return r.ok ? r.json() : {}; })
-      .then(function (kit) {
+    Promise.all([getJSON("videos/share-kit.json"), getJSON("videos/posted.json")])
+      .then(function (res) {
+        var kit = res[0] || {}, postedMap = res[1] || {};
         document.querySelectorAll(".clip").forEach(function (card) {
           var epEl = card.querySelector(".clip-ep");
           var bodyEl = card.querySelector(".clip-body");
@@ -394,7 +394,7 @@
 
           var note = document.createElement("p");
           note.className = "share-note";
-          note.textContent = "Vertical downloads (YouTube / TikTok) are the 9:16 cut from R2; feed downloads (LinkedIn / X) are the 4:5 clip. A few of the newest episodes' 9:16 cuts are still uploading.";
+          note.textContent = "Vertical downloads (YouTube / TikTok) are the 9:16 cut; feed downloads (LinkedIn / X) are the 4:5 clip. The badge by each platform shows whether it has been posted (from the rtd-social record).";
           body.appendChild(note);
 
           PLATFORMS.forEach(function (plat) {
@@ -415,20 +415,19 @@
             fmt.textContent = plat.fmt;
             name.appendChild(fmt);
 
-            var posted = document.createElement("button");
-            posted.className = "posted-btn";
-            posted.type = "button";
-            var setPostedLabel = function () {
-              var on = localStorage.getItem(pkey(ep, plat.key)) === "1";
-              posted.classList.toggle("posted", on);
-              posted.textContent = on ? "Posted ✓" : "Not posted";
-            };
-            posted.addEventListener("click", function () {
-              var on = localStorage.getItem(pkey(ep, plat.key)) === "1";
-              localStorage.setItem(pkey(ep, plat.key), on ? "0" : "1");
-              setPostedLabel();
-            });
-            setPostedLabel();
+            // Real posted status from the rtd-social D1 (videos/posted.json) — read-only.
+            // "Posted ✓" links the post when the D1 has a URL; posted_at shown as a tooltip.
+            var pinfo = (postedMap[ep] || {})[plat.key];
+            var posted = document.createElement(pinfo && pinfo.url ? "a" : "span");
+            posted.className = "posted-btn" + (pinfo ? " posted" : "");
+            if (pinfo) {
+              posted.textContent = "Posted ✓";
+              var tip = pinfo.posted_at ? "Posted " + pinfo.posted_at : "Posted";
+              if (pinfo.url) { posted.href = pinfo.url; posted.target = "_blank"; posted.rel = "noopener"; tip += " — open post"; }
+              posted.title = tip;
+            } else {
+              posted.textContent = "Not posted";
+            }
 
             head.appendChild(name);
             head.appendChild(posted);
