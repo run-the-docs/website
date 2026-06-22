@@ -166,7 +166,8 @@
       "linkedin": "The /init command in Claude Code scans your project and generates a CLAUDE.md for you.\n\nInstead of hand-writing project context, Claude reads the codebase and documents structure, conventions, and commands itself. Better context means better answers from the first prompt.\n\n#ClaudeCode #DeveloperTools #AI",
       "x": "/init in Claude Code scans your project and writes its own CLAUDE.md. No hand-editing the context file — Claude reads the codebase and documents it for you. #ClaudeCode #DevTools",
       "tiktok": "stop hand-writing your project context, just run /init\n#claudecode #ai #coding #developer #tech #softwareengineer #vibecoding"
-    }
+    },
+    "v916": "videos/claude-ep17-916.mp4"
   },
   "Ep 19": {
     "file": "videos/claude-ep19-45.mp4",
@@ -175,7 +176,8 @@
       "linkedin": "Claude Code's /goal lets you define a measurable finish line, then Claude keeps iterating until it's met and stops there.\n\nInstead of babysitting each step, you set the target once and let the loop converge. Currently a research preview, so worth trying on a scoped task first.\n\n#ClaudeCode #AI #DeveloperTools",
       "x": "/goal in Claude Code: set a measurable finish line, and it keeps working until that's met, then stops. No step-by-step babysitting. Research preview.\n\n#ClaudeCode #AICoding",
       "tiktok": "set a finish line, let claude run until it's done\n\n#claudecode #ai #coding #developer #tech #softwareengineer #vibecoding"
-    }
+    },
+    "v916": "videos/claude-ep19-916.mp4"
   },
   "Ep 21": {
     "file": "videos/claude-ep21-45.mp4",
@@ -184,7 +186,8 @@
       "linkedin": "Claude Code's /sandbox runs shell commands inside an OS-enforced sandbox. Turn on auto-allow and the approval prompts stop, while the OS still contains what the commands can touch.\n\nFewer interruptions on routine work, with isolation handled at the system level instead of one yes/no at a time. Currently a research preview.\n\n#ClaudeCode #DevTools #AI",
       "x": "/sandbox in Claude Code runs shell commands in an OS-enforced box. Flip on auto-allow and the approval prompts stop, while the OS still contains what runs. Research preview.\n\n#ClaudeCode #DevTools",
       "tiktok": "no more \"allow this command?\" prompts, the OS boxes it in instead\n\n#claudecode #ai #coding #developer #tech #softwareengineer #vibecoding"
-    }
+    },
+    "v916": "videos/claude-ep21-916.mp4"
   },
   "Ep 23": {
     "file": "videos/claude-ep23-45.mp4",
@@ -193,7 +196,8 @@
       "linkedin": "/statusline lets you describe the status line you want in plain language, and Claude writes the script for you.\n\nSurface the things you actually track while working: active model, current git branch, and how much of the context window is used. Less manual config, more time on the code.\n\n#ClaudeCode #DevTools #AI",
       "x": "/statusline: describe the status line you want, Claude writes the script. Model, git branch, context % right in front of you. No manual config.\n\n#ClaudeCode #AI",
       "tiktok": "describe your status line, claude writes the script\n\n#claudecode #ai #coding #developer #tech #softwareengineer #vibecoding"
-    }
+    },
+    "v916": "videos/claude-ep23-916.mp4"
   },
   "Ep 24": {
     "file": "videos/claude-ep24-45.mp4",
@@ -202,6 +206,7 @@
       "linkedin": "Shell mode in Claude Code: start any input with ! to run a command inline.\n\nThe output lands in the conversation, so you can run git status, a failing test, or a log and immediately ask Claude about it. No window switching, no pasting terminal output back in.\n\n#ClaudeCode #DeveloperTools #AI",
       "x": "Shell mode in Claude Code: prefix any input with ! to run a command inline. The output joins the chat, so you can ask Claude about it right away. No copy-paste from the terminal.\n\n#ClaudeCode #DevTools",
       "tiktok": "stop pasting terminal output into Claude. just hit ! and run the command inline\n\n#claudecode #ai #coding #developer #tech #softwareengineer #vibecoding"
-    }
+    },
+    "v916": "videos/claude-ep24-916.mp4"
   }
 }
