@@ -2,6 +2,7 @@
   "Ep 1": {
     "youtube": {
       "posted_at": null,
+      "publish_at": "2026-06-07T21:56:56Z",
       "status": "posted",
       "url": "https://www.youtube.com/watch?v=KWIj3BxGsqw"
     }
@@ -9,6 +10,7 @@
   "Ep 10": {
     "youtube": {
       "posted_at": null,
+      "publish_at": "2026-06-15T16:00:40Z",
       "status": "posted",
       "url": "https://www.youtube.com/watch?v=GzFY-OFvh1Q"
     }
@@ -16,6 +18,7 @@
   "Ep 11": {
     "youtube": {
       "posted_at": null,
+      "publish_at": "2026-06-16T19:00:20Z",
       "status": "posted",
       "url": "https://www.youtube.com/watch?v=UNwzgP3lswo"
     }
@@ -23,6 +26,7 @@
   "Ep 12": {
     "youtube": {
       "posted_at": null,
+      "publish_at": "2026-06-17T13:00:34Z",
       "status": "posted",
       "url": "https://www.youtube.com/watch?v=ZSGZsCHGLYg"
     }
@@ -30,6 +34,7 @@
   "Ep 13": {
     "youtube": {
       "posted_at": null,
+      "publish_at": "2026-06-18T16:00:24Z",
       "status": "posted",
       "url": "https://www.youtube.com/watch?v=VUJU176o3SI"
     }
@@ -37,6 +42,7 @@
   "Ep 14": {
     "youtube": {
       "posted_at": null,
+      "publish_at": "2026-06-19T19:00:21Z",
       "status": "posted",
       "url": "https://www.youtube.com/watch?v=S8MTwUM56fM"
     }
@@ -44,6 +50,7 @@
   "Ep 15": {
     "youtube": {
       "posted_at": null,
+      "publish_at": "2026-06-20T13:00:44Z",
       "status": "posted",
       "url": "https://www.youtube.com/watch?v=ATRBkdQhIlU"
     }
@@ -51,6 +58,7 @@
   "Ep 16": {
     "youtube": {
       "posted_at": null,
+      "publish_at": "2026-06-21T16:00:36Z",
       "status": "posted",
       "url": "https://www.youtube.com/watch?v=ut-HJ5JgYTQ"
     }
@@ -58,13 +66,15 @@
   "Ep 17": {
     "youtube": {
       "posted_at": null,
-      "status": "scheduled",
+      "publish_at": "2026-06-22T19:00:03Z",
+      "status": "posted",
       "url": "https://www.youtube.com/watch?v=0zY7L-mL97Y"
     }
   },
   "Ep 19": {
     "youtube": {
       "posted_at": null,
+      "publish_at": "2026-06-26T13:00:00Z",
       "status": "scheduled",
       "url": "https://www.youtube.com/watch?v=EuTv512PFeg"
     }
@@ -72,11 +82,13 @@
   "Ep 2": {
     "tiktok": {
       "posted_at": "2026-06-12",
+      "publish_at": null,
       "status": "posted",
       "url": null
     },
     "youtube": {
       "posted_at": null,
+      "publish_at": "2026-06-07T21:56:58Z",
       "status": "posted",
       "url": "https://www.youtube.com/watch?v=ZZkYzzFCJXg"
     }
@@ -84,6 +96,7 @@
   "Ep 21": {
     "youtube": {
       "posted_at": null,
+      "publish_at": "2026-06-27T16:00:00Z",
       "status": "scheduled",
       "url": "https://www.youtube.com/watch?v=UUBbF4sj2lM"
     }
@@ -91,6 +104,7 @@
   "Ep 23": {
     "youtube": {
       "posted_at": null,
+      "publish_at": "2026-06-28T19:00:00Z",
       "status": "scheduled",
       "url": "https://www.youtube.com/watch?v=92B5d5r9aFg"
     }
@@ -98,6 +112,7 @@
   "Ep 24": {
     "youtube": {
       "posted_at": null,
+      "publish_at": "2026-06-25T19:00:00Z",
       "status": "scheduled",
       "url": "https://www.youtube.com/watch?v=0N91Z91x0kM"
     }
@@ -105,11 +120,13 @@
   "Ep 3": {
     "tiktok": {
       "posted_at": "2026-06-12",
+      "publish_at": null,
       "status": "posted",
       "url": null
     },
     "youtube": {
       "posted_at": null,
+      "publish_at": "2026-06-07T21:56:59Z",
       "status": "posted",
       "url": "https://www.youtube.com/watch?v=k0p1V7T3D9E"
     }
@@ -117,11 +134,13 @@
   "Ep 4": {
     "tiktok": {
       "posted_at": null,
+      "publish_at": null,
       "status": "posted",
       "url": null
     },
     "youtube": {
       "posted_at": null,
+      "publish_at": "2026-06-10T17:28:08Z",
       "status": "posted",
       "url": "https://www.youtube.com/watch?v=TCGGjyA95Pk"
     }
@@ -129,11 +148,13 @@
   "Ep 5": {
     "tiktok": {
       "posted_at": "2026-06-12",
+      "publish_at": null,
       "status": "posted",
       "url": null
     },
     "youtube": {
       "posted_at": null,
+      "publish_at": "2026-06-23T13:00:00Z",
       "status": "scheduled",
       "url": "https://www.youtube.com/watch?v=Ys1Sq9Z_CNo"
     }
@@ -141,11 +162,13 @@
   "Ep 6": {
     "tiktok": {
       "posted_at": "2026-06-12",
+      "publish_at": null,
       "status": "posted",
       "url": null
     },
     "youtube": {
       "posted_at": null,
+      "publish_at": "2026-06-11T13:00:02Z",
       "status": "posted",
       "url": "https://www.youtube.com/watch?v=3NAOynMjW7g"
     }
@@ -153,11 +176,13 @@
   "Ep 7": {
     "tiktok": {
       "posted_at": "2026-06-14",
+      "publish_at": null,
       "status": "posted",
       "url": null
     },
     "youtube": {
       "posted_at": null,
+      "publish_at": "2026-06-12T16:00:37Z",
       "status": "posted",
       "url": "https://www.youtube.com/watch?v=fgNfzyllti8"
     }
@@ -165,6 +190,7 @@
   "Ep 8": {
     "youtube": {
       "posted_at": null,
+      "publish_at": "2026-06-13T19:00:21Z",
       "status": "posted",
       "url": "https://www.youtube.com/watch?v=l8LjnU7ppiY"
     }
@@ -172,6 +198,7 @@
   "Ep 9": {
     "youtube": {
       "posted_at": null,
+      "publish_at": "2026-06-24T16:00:00Z",
       "status": "scheduled",
       "url": "https://www.youtube.com/watch?v=lTsqbIBeupc"
     }
@@ -179,11 +206,13 @@
   "fable5": {
     "linkedin": {
       "posted_at": null,
+      "publish_at": null,
       "status": "posted",
       "url": null
     },
     "youtube": {
       "posted_at": null,
+      "publish_at": "2026-06-09T22:30:08Z",
       "status": "posted",
       "url": "https://www.youtube.com/watch?v=8AoM8EP-wYY"
     }
