@@ -1,0 +1,83 @@
+{
+  "Ep 1": {
+    "youtube": {
+      "posted_at": null,
+      "status": "posted",
+      "url": "https://www.youtube.com/watch?v=KWIj3BxGsqw"
+    }
+  },
+  "Ep 2": {
+    "tiktok": {
+      "posted_at": "2026-06-12",
+      "status": "posted",
+      "url": null
+    },
+    "youtube": {
+      "posted_at": null,
+      "status": "posted",
+      "url": "https://www.youtube.com/watch?v=ZZkYzzFCJXg"
+    }
+  },
+  "Ep 3": {
+    "tiktok": {
+      "posted_at": "2026-06-12",
+      "status": "posted",
+      "url": null
+    },
+    "youtube": {
+      "posted_at": null,
+      "status": "posted",
+      "url": "https://www.youtube.com/watch?v=k0p1V7T3D9E"
+    }
+  },
+  "Ep 4": {
+    "tiktok": {
+      "posted_at": null,
+      "status": "posted",
+      "url": null
+    },
+    "youtube": {
+      "posted_at": null,
+      "status": "posted",
+      "url": "https://www.youtube.com/watch?v=pNGEWkARj1A"
+    }
+  },
+  "Ep 5": {
+    "tiktok": {
+      "posted_at": "2026-06-12",
+      "status": "posted",
+      "url": null
+    },
+    "youtube": {
+      "posted_at": null,
+      "status": "posted",
+      "url": "https://www.youtube.com/watch?v=V-uBqiWjrhk"
+    }
+  },
+  "Ep 6": {
+    "tiktok": {
+      "posted_at": "2026-06-12",
+      "status": "posted",
+      "url": null
+    }
+  },
+  "Ep 7": {
+    "tiktok": {
+      "posted_at": "2026-06-14",
+      "status": "posted",
+      "url": null
+    }
+  },
+  "fable5": {
+    "linkedin": {
+      "posted_at": null,
+      "status": "posted",
+      "url": null
+    },
+    "youtube": {
+      "posted_at": null,
+      "status": "posted",
+      "url": "https://www.youtube.com/watch?v=8AoM8EP-wYY"
+    }
+  }
+}
