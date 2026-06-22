@@ -74,6 +74,7 @@
     .share-plat .fmt { color: var(--muted); font-weight: 400; font-size: 0.68rem; margin-left: 0.35rem; }
     .posted-btn { font-size: 0.66rem; font-family: inherit; border-radius: 999px; padding: 2px 9px; cursor: pointer; border: 1px solid var(--card-border); background: transparent; color: var(--muted); white-space: nowrap; }
     .posted-btn.posted { color: var(--accent-light); border-color: var(--accent-light); }
+    .posted-btn.scheduled { color: #d9a441; border-color: rgba(217,164,65,0.5); }
     .share-cap { width: 100%; box-sizing: border-box; background: var(--bg); color: var(--text); border: 1px solid var(--card-border); border-radius: 6px; font-family: inherit; font-size: 0.73rem; line-height: 1.45; padding: 0.5rem; resize: vertical; min-height: 4.5em; }
     .share-actions { display: flex; flex-wrap: wrap; gap: 0.45rem; margin-top: 0.4rem; }
     .share-actions button, .share-actions a { font-size: 0.72rem; font-family: inherit; text-decoration: none; color: var(--text); border: 1px solid var(--card-border); border-radius: 6px; padding: 4px 10px; cursor: pointer; background: transparent; }
@@ -415,16 +416,22 @@
             fmt.textContent = plat.fmt;
             name.appendChild(fmt);
 
-            // Real posted status from the rtd-social D1 (videos/posted.json) — read-only.
-            // "Posted ✓" links the post when the D1 has a URL; posted_at shown as a tooltip.
+            // Real status from the rtd-social D1 (videos/posted.json) — read-only.
+            // posted -> "Posted ✓" (links the post when the D1 has a URL); scheduled ->
+            // "Scheduled"; otherwise "Not posted". posted_at shown as a tooltip.
             var pinfo = (postedMap[ep] || {})[plat.key];
+            var st = pinfo && pinfo.status;
             var posted = document.createElement(pinfo && pinfo.url ? "a" : "span");
-            posted.className = "posted-btn" + (pinfo ? " posted" : "");
-            if (pinfo) {
+            posted.className = "posted-btn" + (st === "posted" ? " posted" : st === "scheduled" ? " scheduled" : "");
+            if (st === "posted") {
               posted.textContent = "Posted ✓";
               var tip = pinfo.posted_at ? "Posted " + pinfo.posted_at : "Posted";
               if (pinfo.url) { posted.href = pinfo.url; posted.target = "_blank"; posted.rel = "noopener"; tip += " — open post"; }
               posted.title = tip;
+            } else if (st === "scheduled") {
+              posted.textContent = "Scheduled";
+              posted.title = "Scheduled to publish" + (pinfo.posted_at ? " " + pinfo.posted_at : "");
+              if (pinfo.url) { posted.href = pinfo.url; posted.target = "_blank"; posted.rel = "noopener"; }
             } else {
               posted.textContent = "Not posted";
             }

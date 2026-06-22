@@ -6,6 +6,69 @@
       "url": "https://www.youtube.com/watch?v=KWIj3BxGsqw"
     }
   },
+  "Ep 10": {
+    "youtube": {
+      "posted_at": null,
+      "status": "posted",
+      "url": "https://www.youtube.com/watch?v=GzFY-OFvh1Q"
+    }
+  },
+  "Ep 11": {
+    "youtube": {
+      "posted_at": null,
+      "status": "posted",
+      "url": "https://www.youtube.com/watch?v=UNwzgP3lswo"
+    }
+  },
+  "Ep 12": {
+    "youtube": {
+      "posted_at": null,
+      "status": "posted",
+      "url": "https://www.youtube.com/watch?v=ZSGZsCHGLYg"
+    }
+  },
+  "Ep 13": {
+    "youtube": {
+      "posted_at": null,
+      "status": "posted",
+      "url": "https://www.youtube.com/watch?v=VUJU176o3SI"
+    }
+  },
+  "Ep 14": {
+    "youtube": {
+      "posted_at": null,
+      "status": "posted",
+      "url": "https://www.youtube.com/watch?v=S8MTwUM56fM"
+    }
+  },
+  "Ep 15": {
+    "youtube": {
+      "posted_at": null,
+      "status": "posted",
+      "url": "https://www.youtube.com/watch?v=ATRBkdQhIlU"
+    }
+  },
+  "Ep 16": {
+    "youtube": {
+      "posted_at": null,
+      "status": "posted",
+      "url": "https://www.youtube.com/watch?v=ut-HJ5JgYTQ"
+    }
+  },
+  "Ep 17": {
+    "youtube": {
+      "posted_at": null,
+      "status": "scheduled",
+      "url": "https://www.youtube.com/watch?v=0zY7L-mL97Y"
+    }
+  },
+  "Ep 19": {
+    "youtube": {
+      "posted_at": null,
+      "status": "scheduled",
+      "url": "https://www.youtube.com/watch?v=EuTv512PFeg"
+    }
+  },
   "Ep 2": {
     "tiktok": {
       "posted_at": "2026-06-12",
@@ -16,6 +79,27 @@
       "posted_at": null,
       "status": "posted",
       "url": "https://www.youtube.com/watch?v=ZZkYzzFCJXg"
+    }
+  },
+  "Ep 21": {
+    "youtube": {
+      "posted_at": null,
+      "status": "scheduled",
+      "url": "https://www.youtube.com/watch?v=UUBbF4sj2lM"
+    }
+  },
+  "Ep 23": {
+    "youtube": {
+      "posted_at": null,
+      "status": "scheduled",
+      "url": "https://www.youtube.com/watch?v=92B5d5r9aFg"
+    }
+  },
+  "Ep 24": {
+    "youtube": {
+      "posted_at": null,
+      "status": "scheduled",
+      "url": "https://www.youtube.com/watch?v=0N91Z91x0kM"
     }
   },
   "Ep 3": {
@@ -39,7 +123,7 @@
     "youtube": {
       "posted_at": null,
       "status": "posted",
-      "url": "https://www.youtube.com/watch?v=pNGEWkARj1A"
+      "url": "https://www.youtube.com/watch?v=TCGGjyA95Pk"
     }
   },
   "Ep 5": {
@@ -50,8 +134,8 @@
     },
     "youtube": {
       "posted_at": null,
-      "status": "posted",
-      "url": "https://www.youtube.com/watch?v=V-uBqiWjrhk"
+      "status": "scheduled",
+      "url": "https://www.youtube.com/watch?v=Ys1Sq9Z_CNo"
     }
   },
   "Ep 6": {
@@ -59,6 +143,11 @@
       "posted_at": "2026-06-12",
       "status": "posted",
       "url": null
+    },
+    "youtube": {
+      "posted_at": null,
+      "status": "posted",
+      "url": "https://www.youtube.com/watch?v=3NAOynMjW7g"
     }
   },
   "Ep 7": {
@@ -66,6 +155,25 @@
       "posted_at": "2026-06-14",
       "status": "posted",
       "url": null
+    },
+    "youtube": {
+      "posted_at": null,
+      "status": "posted",
+      "url": "https://www.youtube.com/watch?v=fgNfzyllti8"
+    }
+  },
+  "Ep 8": {
+    "youtube": {
+      "posted_at": null,
+      "status": "posted",
+      "url": "https://www.youtube.com/watch?v=l8LjnU7ppiY"
+    }
+  },
+  "Ep 9": {
+    "youtube": {
+      "posted_at": null,
+      "status": "scheduled",
+      "url": "https://www.youtube.com/watch?v=lTsqbIBeupc"
     }
   },
   "fable5": {
