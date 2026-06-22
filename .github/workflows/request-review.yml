@@ -15,6 +15,7 @@ jobs:
     permissions:
       pull-requests: write
       contents: write
+      issues: write
 
     steps:
       - name: Generate review-e-bot token
@@ -32,12 +33,27 @@ jobs:
           script: |
             const pr = context.payload.pull_request;
             const number = pr.number;
-
-            // Submit a pending review to signal Review-E is assigned
             console.log(`PR #${number}: ${pr.title} by ${pr.user.login}`);
-            console.log('Review-E bot will review this PR.');
 
-            // Enable auto-merge (squash)
+            // Actually request review via the rig's documented opt-in: the `needs-review`
+            // label. Review-E is dispatched by rig-conductor from the assignments:review-e
+            // stream once run-the-docs is wired as a conductor tenant (see rig-conductor#1924).
+            // (Previously this step only logged a placeholder + armed auto-merge, so no
+            // reviewer was ever assigned and PRs sat REVIEW_REQUIRED — fixed here.) Until the
+            // tenant dispatch is wired, a labelled PR may still need a manual/admin merge.
+            try {
+              await github.rest.issues.addLabels({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: number,
+                labels: ['needs-review'],
+              });
+              console.log('Requested review: applied needs-review label.');
+            } catch (e) {
+              console.log(`needs-review label: ${e.message}`);
+            }
+
+            // Arm squash auto-merge so an approval lands the PR automatically.
             try {
               await github.graphql(`
                 mutation {
@@ -47,7 +63,7 @@ jobs:
                   }) { clientMutationId }
                 }
               `);
-              console.log('Auto-merge enabled');
+              console.log('Auto-merge enabled (squash).');
             } catch (e) {
               console.log(`Auto-merge: ${e.message}`);
             }
