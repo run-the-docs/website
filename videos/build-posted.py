@@ -2,14 +2,16 @@
 """Generate videos/posted.json (per-episode, per-platform posting status) from the
 rtd-social D1.
 
-posted.json shape: { "Ep N": { "<platform>": {"status","url","posted_at"} } }
+posted.json shape: { "Ep N": { "<platform>": {"status","url","posted_at","publish_at"} } }
+publish_at is the YouTube publish time (status.publishAt while scheduled, snippet.publishedAt
+once live), ISO-8601 UTC; the renderer shows it in the viewer's local zone.
 Only non-'none' entries are recorded; the renderer treats a missing entry as not-posted.
 The Share kit shows these 4 platforms: youtube, tiktok, linkedin, x (the D1 also tracks
 instagram, which the site doesn't surface).
 
 REPRODUCE (orchestrator-side; the D1 is read via the Cloudflare MCP, no secret handling):
   1) Cloudflare MCP d1_query on database d298499d-abb8-4009-b184-9bd8145617c1:
-       SELECT v.episode, p.platform, p.status, p.url, p.posted_at
+       SELECT v.episode, p.platform, p.status, p.url, p.posted_at, p.publish_at
        FROM videos v JOIN postings p ON p.video_id = v.id
        WHERE v.series = 'claude-code'
          AND p.platform IN ('youtube','tiktok','linkedin','x')
@@ -52,6 +54,7 @@ def build(rows):
             "status": row["status"],
             "url": row.get("url"),
             "posted_at": row.get("posted_at"),
+            "publish_at": row.get("publish_at"),
         }
     return out
 

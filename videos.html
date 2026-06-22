@@ -366,6 +366,15 @@
       { key: "x",        label: "X",                       fmt: "4:5"  }
     ];
     var getJSON = function (u) { return fetch(u, { cache: "no-cache" }).then(function (r) { return r.ok ? r.json() : {}; }).catch(function () { return {}; }); };
+    // Format an ISO-8601 (UTC) publish time in the viewer's local zone. withTime adds HH:MM.
+    var fmtWhen = function (iso, withTime) {
+      if (!iso) return "";
+      var d = new Date(iso);
+      if (isNaN(d.getTime())) return "";
+      var o = withTime ? { month: "short", day: "numeric", hour: "2-digit", minute: "2-digit" }
+                       : { month: "short", day: "numeric" };
+      try { return d.toLocaleString([], o); } catch (e) { return iso; }
+    };
 
     Promise.all([getJSON("videos/share-kit.json"), getJSON("videos/posted.json")])
       .then(function (res) {
@@ -418,19 +427,23 @@
 
             // Real status from the rtd-social D1 (videos/posted.json) — read-only.
             // posted -> "Posted ✓" (links the post when the D1 has a URL); scheduled ->
-            // "Scheduled"; otherwise "Not posted". posted_at shown as a tooltip.
+            // "Scheduled · <when>"; otherwise "Not posted". publish_at is the YouTube publish
+            // time (status.publishAt while scheduled, snippet.publishedAt once live), shown in
+            // the viewer's local zone; posted_at is the coarser per-platform post date.
             var pinfo = (postedMap[ep] || {})[plat.key];
             var st = pinfo && pinfo.status;
             var posted = document.createElement(pinfo && pinfo.url ? "a" : "span");
             posted.className = "posted-btn" + (st === "posted" ? " posted" : st === "scheduled" ? " scheduled" : "");
             if (st === "posted") {
               posted.textContent = "Posted ✓";
-              var tip = pinfo.posted_at ? "Posted " + pinfo.posted_at : "Posted";
+              var when = pinfo.publish_at || pinfo.posted_at;
+              var tip = when ? "Posted " + fmtWhen(when, (when.indexOf("T") > 0)) : "Posted";
               if (pinfo.url) { posted.href = pinfo.url; posted.target = "_blank"; posted.rel = "noopener"; tip += " — open post"; }
               posted.title = tip;
             } else if (st === "scheduled") {
-              posted.textContent = "Scheduled";
-              posted.title = "Scheduled to publish" + (pinfo.posted_at ? " " + pinfo.posted_at : "");
+              var w = fmtWhen(pinfo.publish_at, true);
+              posted.textContent = w ? "Scheduled · " + w : "Scheduled";
+              posted.title = "Scheduled to publish" + (w ? " " + w + " (" + pinfo.publish_at + ")" : "");
               if (pinfo.url) { posted.href = pinfo.url; posted.target = "_blank"; posted.rel = "noopener"; }
             } else {
               posted.textContent = "Not posted";
