@@ -1,0 +1,200 @@
+{
+  "_generated_by": "videos/build-catalog.py (bootstrap from legacy videos.html + share-kit.json)",
+  "claude_code": {
+    "title": "claude code",
+    "meta": "21 episodes · code.claude.com/docs · self-hosted clips (also on LinkedIn)",
+    "episodes": [
+      {
+        "ep": "Ep 1",
+        "title": "Your first session",
+        "desc": "Launch <code>claude</code> in any repo, ask in plain English, and it reads your code to answer — read-only, nothing touched.",
+        "poster": "videos/claude-ep1-poster.jpg",
+        "file": "videos/claude-ep1-45.mp4",
+        "v916": "https://pub-8745206116f440c6b36f5e6bd0eb1905.r2.dev/claude-ep1-916.mp4"
+      },
+      {
+        "ep": "Ep 2",
+        "title": "The agentic loop",
+        "desc": "Describe a task; Claude reads, proposes a diff you approve, then runs the tests. Read, edit, verify.",
+        "poster": "videos/claude-ep2-poster.jpg",
+        "file": "videos/claude-ep2-45.mp4",
+        "v916": "https://pub-8745206116f440c6b36f5e6bd0eb1905.r2.dev/claude-ep2-916.mp4"
+      },
+      {
+        "ep": "Ep 3",
+        "title": "CLAUDE.md memory",
+        "desc": "One file your agent reads every session. Run <code>/init</code> to draft it from your codebase — stop re-explaining your project.",
+        "poster": "videos/claude-ep3-poster.jpg",
+        "file": "videos/claude-ep3-45.mp4",
+        "v916": "https://pub-8745206116f440c6b36f5e6bd0eb1905.r2.dev/claude-ep3-916.mp4"
+      },
+      {
+        "ep": "Ep 4",
+        "title": "Plan mode",
+        "desc": "Claude shows its plan before touching a file. Read it, edit it, approve — then it runs. No surprise edits.",
+        "poster": "videos/claude-ep4-poster.jpg",
+        "file": "videos/claude-ep4-45.mp4",
+        "v916": "https://pub-8745206116f440c6b36f5e6bd0eb1905.r2.dev/claude-ep4-916.mp4"
+      },
+      {
+        "ep": "Ep 5",
+        "title": "Slash commands",
+        "desc": "Built-in <code>/</code> commands, plus your own saved in <code>.claude/commands/</code> and shared with your team via git.",
+        "poster": "videos/claude-ep5-poster.jpg",
+        "file": "videos/claude-ep5-45.mp4",
+        "v916": "https://pub-8745206116f440c6b36f5e6bd0eb1905.r2.dev/claude-ep5-916.mp4"
+      },
+      {
+        "ep": "Ep 6",
+        "title": "Undo anything",
+        "desc": "Made a bad edit? Rewind code and conversation to any earlier point with <code>/rewind</code> or Esc-Esc.",
+        "poster": "videos/claude-ep6-poster.jpg",
+        "file": "videos/claude-ep6-45.mp4",
+        "v916": "https://pub-8745206116f440c6b36f5e6bd0eb1905.r2.dev/claude-ep6-916.mp4"
+      },
+      {
+        "ep": "Ep 7",
+        "title": "Parallel agents",
+        "desc": "Spin up subagents that each get their own context window and tools, working separate tasks at once.",
+        "poster": "videos/claude-ep7-poster.jpg",
+        "file": "videos/claude-ep7-45.mp4",
+        "v916": "https://pub-8745206116f440c6b36f5e6bd0eb1905.r2.dev/claude-ep7-916.mp4"
+      },
+      {
+        "ep": "Ep 8",
+        "title": "Hooks",
+        "desc": "A PostToolUse hook runs your formatter or linter automatically on every file Claude edits.",
+        "poster": "videos/claude-ep8-poster.jpg",
+        "file": "videos/claude-ep8-45.mp4",
+        "v916": "https://pub-8745206116f440c6b36f5e6bd0eb1905.r2.dev/claude-ep8-916.mp4"
+      },
+      {
+        "ep": "Ep 9",
+        "title": "MCP",
+        "desc": "Give Claude live tools — databases, APIs, the browser — by adding one MCP server config.",
+        "poster": "videos/claude-ep9-poster.jpg",
+        "file": "videos/claude-ep9-45.mp4",
+        "v916": "https://pub-8745206116f440c6b36f5e6bd0eb1905.r2.dev/claude-ep9-916.mp4"
+      },
+      {
+        "ep": "Ep 10",
+        "title": "Skills",
+        "desc": "Package a repeatable workflow into a SKILL.md that Claude loads on demand and reuses.",
+        "poster": "videos/claude-ep10-poster.jpg",
+        "file": "videos/claude-ep10-45.mp4",
+        "v916": "https://pub-8745206116f440c6b36f5e6bd0eb1905.r2.dev/claude-ep10-916.mp4"
+      },
+      {
+        "ep": "Ep 11",
+        "title": "Context window",
+        "desc": "Keep long sessions lean: inspect with <code>/context</code>, shrink with <code>/compact</code>, reset with <code>/clear</code>.",
+        "poster": "videos/claude-ep11-poster.jpg",
+        "file": "videos/claude-ep11-45.mp4",
+        "v916": "https://pub-8745206116f440c6b36f5e6bd0eb1905.r2.dev/claude-ep11-916.mp4"
+      },
+      {
+        "ep": "Ep 12",
+        "title": "Resume sessions",
+        "desc": "Pick up exactly where you left off — <code>--continue</code>, <code>--resume</code>, or <code>/resume</code>.",
+        "poster": "videos/claude-ep12-poster.jpg",
+        "file": "videos/claude-ep12-45.mp4",
+        "v916": "https://pub-8745206116f440c6b36f5e6bd0eb1905.r2.dev/claude-ep12-916.mp4"
+      },
+      {
+        "ep": "Ep 13",
+        "title": "Headless mode",
+        "desc": "Pipe anything into <code>claude -p</code> for a scriptable one-shot answer, no interactive session.",
+        "poster": "videos/claude-ep13-poster.jpg",
+        "file": "videos/claude-ep13-45.mp4",
+        "v916": "https://pub-8745206116f440c6b36f5e6bd0eb1905.r2.dev/claude-ep13-916.mp4"
+      },
+      {
+        "ep": "Ep 14",
+        "title": "@ file references",
+        "desc": "Type <code>@</code> to pin a file straight into your prompt — stop making Claude hunt for it.",
+        "poster": "videos/claude-ep14-poster.jpg",
+        "file": "videos/claude-ep14-45.mp4",
+        "v916": "https://pub-8745206116f440c6b36f5e6bd0eb1905.r2.dev/claude-ep14-916.mp4"
+      },
+      {
+        "ep": "Ep 15",
+        "title": "/code-review",
+        "desc": "Run <code>/code-review</code> to get a bug-focused review of your current diff before you ship.",
+        "poster": "videos/claude-ep15-poster.jpg",
+        "file": "videos/claude-ep15-45.mp4",
+        "v916": "https://pub-8745206116f440c6b36f5e6bd0eb1905.r2.dev/claude-ep15-916.mp4"
+      },
+      {
+        "ep": "Ep 16",
+        "title": "Interview mode",
+        "desc": "Make Claude interview you with multiple-choice questions to nail the spec before it builds.",
+        "poster": "videos/claude-ep16-poster.jpg",
+        "file": "videos/claude-ep16-45.mp4",
+        "v916": "https://pub-8745206116f440c6b36f5e6bd0eb1905.r2.dev/claude-ep16-916.mp4"
+      },
+      {
+        "ep": "Ep 17",
+        "title": "/init",
+        "desc": "Run <code>/init</code> and Claude scans the project and writes its own CLAUDE.md — no hand-editing.",
+        "poster": "videos/claude-ep17-poster.jpg",
+        "file": "videos/claude-ep17-45.mp4",
+        "v916": null
+      },
+      {
+        "ep": "Ep 19",
+        "title": "/goal",
+        "desc": "Set <code>/goal</code> with a measurable finish line; Claude keeps working until it is met, then stops. Research preview.",
+        "poster": "videos/claude-ep19-poster.jpg",
+        "file": "videos/claude-ep19-45.mp4",
+        "v916": null
+      },
+      {
+        "ep": "Ep 21",
+        "title": "/sandbox",
+        "desc": "Run <code>/sandbox</code>, pick auto-allow, and Claude runs shell commands in an OS-enforced box — no prompts. Research preview.",
+        "poster": "videos/claude-ep21-poster.jpg",
+        "file": "videos/claude-ep21-45.mp4",
+        "v916": null
+      },
+      {
+        "ep": "Ep 23",
+        "title": "/statusline",
+        "desc": "Run <code>/statusline</code>, describe what you want, and Claude writes the status-line script: model, branch, context %.",
+        "poster": "videos/claude-ep23-poster.jpg",
+        "file": "videos/claude-ep23-45.mp4",
+        "v916": null
+      },
+      {
+        "ep": "Ep 24",
+        "title": "Shell mode (!)",
+        "desc": "Prefix any input with <code>!</code> to run a command inline — its output joins the chat so you can ask about it.",
+        "poster": "videos/claude-ep24-poster.jpg",
+        "file": "videos/claude-ep24-45.mp4",
+        "v916": null
+      }
+    ]
+  },
+  "extras": [
+    {
+      "badge": "The Rig · Dashecorp",
+      "title": "How The Rig reviews code — meet Review-E",
+      "desc": "When an AI agent opens a pull request, another agent reviews it. The full review flow in The Rig — Review-E's persona, and the four gates before a change can merge. ~44 seconds.",
+      "poster": "videos/rig-review-explainer.jpg",
+      "file": "videos/rig-review-explainer.mp4",
+      "links": [
+        {
+          "href": "videos/rig-review-explainer.mp4",
+          "label": "download the clip"
+        },
+        {
+          "href": "https://www.dashecorp.com/codi-e/how-the-rig-reviews-code/",
+          "label": "Full write-up ↗"
+        },
+        {
+          "href": "https://youtu.be/-XVHBD6rjkU",
+          "label": "YouTube ↗"
+        }
+      ]
+    }
+  ]
+}

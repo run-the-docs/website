@@ -80,6 +80,7 @@
     .share-actions button:hover, .share-actions a:hover { border-color: var(--accent); }
   </style>
 </head>
+
 <body>
 
   <header>
@@ -92,261 +93,14 @@
 
     <section class="series">
       <h2 class="series-title cc">claude code</h2>
-      <p class="series-meta">21 episodes · code.claude.com/docs · self-hosted clips (also on LinkedIn)</p>
-      <div class="grid">
-
-        <div class="clip">
-          <video controls preload="metadata" poster="videos/claude-ep1-poster.jpg" playsinline>
-            <source src="videos/claude-ep1-45.mp4" type="video/mp4" />
-          </video>
-          <div class="clip-body">
-            <span class="clip-ep">Ep 1</span>
-            <div class="clip-title">Your first session</div>
-            <p class="clip-desc">Launch <code>claude</code> in any repo, ask in plain English, and it reads your code to answer — read-only, nothing touched.</p>
-          </div>
-        </div>
-
-        <div class="clip">
-          <video controls preload="metadata" poster="videos/claude-ep2-poster.jpg" playsinline>
-            <source src="videos/claude-ep2-45.mp4" type="video/mp4" />
-          </video>
-          <div class="clip-body">
-            <span class="clip-ep">Ep 2</span>
-            <div class="clip-title">The agentic loop</div>
-            <p class="clip-desc">Describe a task; Claude reads, proposes a diff you approve, then runs the tests. Read, edit, verify.</p>
-          </div>
-        </div>
-
-        <div class="clip">
-          <video controls preload="metadata" poster="videos/claude-ep3-poster.jpg" playsinline>
-            <source src="videos/claude-ep3-45.mp4" type="video/mp4" />
-          </video>
-          <div class="clip-body">
-            <span class="clip-ep">Ep 3</span>
-            <div class="clip-title">CLAUDE.md memory</div>
-            <p class="clip-desc">One file your agent reads every session. Run <code>/init</code> to draft it from your codebase — stop re-explaining your project.</p>
-          </div>
-        </div>
-
-        <div class="clip">
-          <video controls preload="metadata" poster="videos/claude-ep4-poster.jpg" playsinline>
-            <source src="videos/claude-ep4-45.mp4" type="video/mp4" />
-          </video>
-          <div class="clip-body">
-            <span class="clip-ep">Ep 4</span>
-            <div class="clip-title">Plan mode</div>
-            <p class="clip-desc">Claude shows its plan before touching a file. Read it, edit it, approve — then it runs. No surprise edits.</p>
-          </div>
-        </div>
-
-        <div class="clip">
-          <video controls preload="metadata" poster="videos/claude-ep5-poster.jpg" playsinline>
-            <source src="videos/claude-ep5-45.mp4" type="video/mp4" />
-          </video>
-          <div class="clip-body">
-            <span class="clip-ep">Ep 5</span>
-            <div class="clip-title">Slash commands</div>
-            <p class="clip-desc">Built-in <code>/</code> commands, plus your own saved in <code>.claude/commands/</code> and shared with your team via git.</p>
-          </div>
-        </div>
-
-        <div class="clip">
-          <video controls preload="metadata" poster="videos/claude-ep6-poster.jpg" playsinline>
-            <source src="videos/claude-ep6-45.mp4" type="video/mp4" />
-          </video>
-          <div class="clip-body">
-            <span class="clip-ep">Ep 6</span>
-            <div class="clip-title">Undo anything</div>
-            <p class="clip-desc">Made a bad edit? Rewind code and conversation to any earlier point with <code>/rewind</code> or Esc-Esc.</p>
-          </div>
-        </div>
-
-        <div class="clip">
-          <video controls preload="metadata" poster="videos/claude-ep7-poster.jpg" playsinline>
-            <source src="videos/claude-ep7-45.mp4" type="video/mp4" />
-          </video>
-          <div class="clip-body">
-            <span class="clip-ep">Ep 7</span>
-            <div class="clip-title">Parallel agents</div>
-            <p class="clip-desc">Spin up subagents that each get their own context window and tools, working separate tasks at once.</p>
-          </div>
-        </div>
-
-        <div class="clip">
-          <video controls preload="metadata" poster="videos/claude-ep8-poster.jpg" playsinline>
-            <source src="videos/claude-ep8-45.mp4" type="video/mp4" />
-          </video>
-          <div class="clip-body">
-            <span class="clip-ep">Ep 8</span>
-            <div class="clip-title">Hooks</div>
-            <p class="clip-desc">A PostToolUse hook runs your formatter or linter automatically on every file Claude edits.</p>
-          </div>
-        </div>
-
-        <div class="clip">
-          <video controls preload="metadata" poster="videos/claude-ep9-poster.jpg" playsinline>
-            <source src="videos/claude-ep9-45.mp4" type="video/mp4" />
-          </video>
-          <div class="clip-body">
-            <span class="clip-ep">Ep 9</span>
-            <div class="clip-title">MCP</div>
-            <p class="clip-desc">Give Claude live tools — databases, APIs, the browser — by adding one MCP server config.</p>
-          </div>
-        </div>
-
-        <div class="clip">
-          <video controls preload="metadata" poster="videos/claude-ep10-poster.jpg" playsinline>
-            <source src="videos/claude-ep10-45.mp4" type="video/mp4" />
-          </video>
-          <div class="clip-body">
-            <span class="clip-ep">Ep 10</span>
-            <div class="clip-title">Skills</div>
-            <p class="clip-desc">Package a repeatable workflow into a SKILL.md that Claude loads on demand and reuses.</p>
-          </div>
-        </div>
-
-        <div class="clip">
-          <video controls preload="metadata" poster="videos/claude-ep11-poster.jpg" playsinline>
-            <source src="videos/claude-ep11-45.mp4" type="video/mp4" />
-          </video>
-          <div class="clip-body">
-            <span class="clip-ep">Ep 11</span>
-            <div class="clip-title">Context window</div>
-            <p class="clip-desc">Keep long sessions lean: inspect with <code>/context</code>, shrink with <code>/compact</code>, reset with <code>/clear</code>.</p>
-          </div>
-        </div>
-
-        <div class="clip">
-          <video controls preload="metadata" poster="videos/claude-ep12-poster.jpg" playsinline>
-            <source src="videos/claude-ep12-45.mp4" type="video/mp4" />
-          </video>
-          <div class="clip-body">
-            <span class="clip-ep">Ep 12</span>
-            <div class="clip-title">Resume sessions</div>
-            <p class="clip-desc">Pick up exactly where you left off — <code>--continue</code>, <code>--resume</code>, or <code>/resume</code>.</p>
-          </div>
-        </div>
-
-        <div class="clip">
-          <video controls preload="metadata" poster="videos/claude-ep13-poster.jpg" playsinline>
-            <source src="videos/claude-ep13-45.mp4" type="video/mp4" />
-          </video>
-          <div class="clip-body">
-            <span class="clip-ep">Ep 13</span>
-            <div class="clip-title">Headless mode</div>
-            <p class="clip-desc">Pipe anything into <code>claude -p</code> for a scriptable one-shot answer, no interactive session.</p>
-          </div>
-        </div>
-
-        <div class="clip">
-          <video controls preload="metadata" poster="videos/claude-ep14-poster.jpg" playsinline>
-            <source src="videos/claude-ep14-45.mp4" type="video/mp4" />
-          </video>
-          <div class="clip-body">
-            <span class="clip-ep">Ep 14</span>
-            <div class="clip-title">@ file references</div>
-            <p class="clip-desc">Type <code>@</code> to pin a file straight into your prompt — stop making Claude hunt for it.</p>
-          </div>
-        </div>
-
-        <div class="clip">
-          <video controls preload="metadata" poster="videos/claude-ep15-poster.jpg" playsinline>
-            <source src="videos/claude-ep15-45.mp4" type="video/mp4" />
-          </video>
-          <div class="clip-body">
-            <span class="clip-ep">Ep 15</span>
-            <div class="clip-title">/code-review</div>
-            <p class="clip-desc">Run <code>/code-review</code> to get a bug-focused review of your current diff before you ship.</p>
-          </div>
-        </div>
-
-        <div class="clip">
-          <video controls preload="metadata" poster="videos/claude-ep16-poster.jpg" playsinline>
-            <source src="videos/claude-ep16-45.mp4" type="video/mp4" />
-          </video>
-          <div class="clip-body">
-            <span class="clip-ep">Ep 16</span>
-            <div class="clip-title">Interview mode</div>
-            <p class="clip-desc">Make Claude interview you with multiple-choice questions to nail the spec before it builds.</p>
-          </div>
-        </div>
-
-        <div class="clip">
-          <video controls preload="metadata" poster="videos/claude-ep17-poster.jpg" playsinline>
-            <source src="videos/claude-ep17-45.mp4" type="video/mp4" />
-          </video>
-          <div class="clip-body">
-            <span class="clip-ep">Ep 17</span>
-            <div class="clip-title">/init</div>
-            <p class="clip-desc">Run <code>/init</code> and Claude scans the project and writes its own CLAUDE.md — no hand-editing.</p>
-          </div>
-        </div>
-
-        <div class="clip">
-          <video controls preload="metadata" poster="videos/claude-ep19-poster.jpg" playsinline>
-            <source src="videos/claude-ep19-45.mp4" type="video/mp4" />
-          </video>
-          <div class="clip-body">
-            <span class="clip-ep">Ep 19</span>
-            <div class="clip-title">/goal</div>
-            <p class="clip-desc">Set <code>/goal</code> with a measurable finish line; Claude keeps working until it is met, then stops. Research preview.</p>
-          </div>
-        </div>
-
-        <div class="clip">
-          <video controls preload="metadata" poster="videos/claude-ep21-poster.jpg" playsinline>
-            <source src="videos/claude-ep21-45.mp4" type="video/mp4" />
-          </video>
-          <div class="clip-body">
-            <span class="clip-ep">Ep 21</span>
-            <div class="clip-title">/sandbox</div>
-            <p class="clip-desc">Run <code>/sandbox</code>, pick auto-allow, and Claude runs shell commands in an OS-enforced box — no prompts. Research preview.</p>
-          </div>
-        </div>
-
-        <div class="clip">
-          <video controls preload="metadata" poster="videos/claude-ep23-poster.jpg" playsinline>
-            <source src="videos/claude-ep23-45.mp4" type="video/mp4" />
-          </video>
-          <div class="clip-body">
-            <span class="clip-ep">Ep 23</span>
-            <div class="clip-title">/statusline</div>
-            <p class="clip-desc">Run <code>/statusline</code>, describe what you want, and Claude writes the status-line script: model, branch, context %.</p>
-          </div>
-        </div>
-
-        <div class="clip">
-          <video controls preload="metadata" poster="videos/claude-ep24-poster.jpg" playsinline>
-            <source src="videos/claude-ep24-45.mp4" type="video/mp4" />
-          </video>
-          <div class="clip-body">
-            <span class="clip-ep">Ep 24</span>
-            <div class="clip-title">Shell mode (!)</div>
-            <p class="clip-desc">Prefix any input with <code>!</code> to run a command inline — its output joins the chat so you can ask about it.</p>
-          </div>
-        </div>
-
-      </div>
+      <p class="series-meta" id="cc-meta"></p>
+      <div class="grid" id="cc-grid"></div>
     </section>
 
     <section class="series">
       <h2 class="series-title">the rig</h2>
       <p class="series-meta">How Dashecorp's autonomous engineering pipeline reviews code.</p>
-      <div class="video-card">
-        <video controls preload="metadata" poster="videos/rig-review-explainer.jpg" playsinline>
-          <source src="videos/rig-review-explainer.mp4" type="video/mp4" />
-          Your browser doesn't support embedded video — <a href="videos/rig-review-explainer.mp4">download the clip</a>.
-        </video>
-        <div class="video-body">
-          <span class="video-badge">The Rig · Dashecorp</span>
-          <div class="video-title">How The Rig reviews code — meet Review-E</div>
-          <p class="video-desc">When an AI agent opens a pull request, another agent reviews it. The full review flow in The Rig — Review-E's persona, and the four gates before a change can merge. ~44 seconds.</p>
-          <div class="video-links">
-            <a href="https://www.dashecorp.com/codi-e/how-the-rig-reviews-code/" target="_blank" rel="noopener">Full write-up ↗</a>
-            <a href="https://youtu.be/-XVHBD6rjkU" target="_blank" rel="noopener">YouTube ↗</a>
-          </div>
-        </div>
-      </div>
+      <div id="rig-extras"></div>
     </section>
 
   </main>
@@ -354,9 +108,10 @@
   <footer>Run the Docs · self-hosted on Cloudflare Pages</footer>
 
   <script>
-  // Per-video Share kit: download + per-platform caption + posted status.
-  // Captions come from videos/share-kit.json (generated). Posted status persists
-  // in localStorage (per browser) — keyed by episode + platform.
+  // Data-driven /videos: render cards from videos/catalog.json (the catalogue the
+  // Phase-4 reconciler regenerates from R2) + decorate with human prose from
+  // videos/captions.json. "Present in catalog" => "shown here" with no hand edit.
+  // A missing caption never hides a video (its download still renders).
   (function () {
     var PLATFORMS = [
       { key: "youtube",  label: "YouTube",                 fmt: "9:16" },
@@ -365,132 +120,139 @@
       { key: "x",        label: "X",                       fmt: "4:5"  }
     ];
     var pkey = function (ep, p) { return "rtd-posted:" + ep + ":" + p; };
+    var grid = document.getElementById("cc-grid");
+    var rigBox = document.getElementById("rig-extras");
 
-    fetch("videos/share-kit.json")
-      .then(function (r) { return r.ok ? r.json() : {}; })
-      .then(function (kit) {
-        document.querySelectorAll(".clip").forEach(function (card) {
-          var epEl = card.querySelector(".clip-ep");
-          var bodyEl = card.querySelector(".clip-body");
-          if (!epEl || !bodyEl) return;
-          var ep = epEl.textContent.trim();              // "Ep 1"
-          var entry = kit[ep];
-          if (!entry || !entry.captions) return;          // only episodes with a kit
+    function el(tag, cls, text) {
+      var n = document.createElement(tag);
+      if (cls) n.className = cls;
+      if (text != null) n.textContent = text;
+      return n;
+    }
 
-          var share = document.createElement("div");
-          share.className = "share";
+    function videoEl(poster, file) {
+      var v = document.createElement("video");
+      v.controls = true; v.preload = "metadata"; v.playsInline = true;
+      if (poster) v.setAttribute("poster", poster);
+      var s = document.createElement("source");
+      s.src = file; s.type = "video/mp4";
+      v.appendChild(s);
+      return v;
+    }
 
-          var toggle = document.createElement("button");
-          toggle.className = "share-toggle";
-          toggle.type = "button";
-          toggle.textContent = "Share ▾";
+    function shareKit(ep, entry, caps) {
+      caps = caps || {};
+      var share = el("div", "share");
+      var toggle = el("button", "share-toggle"); toggle.type = "button"; toggle.textContent = "Share ▾";
+      var body = el("div", "share-body hidden");
+      toggle.addEventListener("click", function () {
+        var hidden = body.classList.toggle("hidden");
+        toggle.textContent = hidden ? "Share ▾" : "Share ▴";
+      });
+      body.appendChild(el("p", "share-note", "Vertical downloads (YouTube / TikTok) are the 9:16 cut from R2; feed downloads (LinkedIn / X) are the 4:5 clip. A few of the newest episodes' 9:16 cuts are still uploading."));
 
-          var body = document.createElement("div");
-          body.className = "share-body hidden";
-          toggle.addEventListener("click", function () {
-            var hidden = body.classList.toggle("hidden");
-            toggle.textContent = hidden ? "Share ▾" : "Share ▴";
-          });
-
-          var note = document.createElement("p");
-          note.className = "share-note";
-          note.textContent = "Vertical downloads (YouTube / TikTok) are the 9:16 cut from R2; feed downloads (LinkedIn / X) are the 4:5 clip. A few of the newest episodes' 9:16 cuts are still uploading.";
-          body.appendChild(note);
-
-          PLATFORMS.forEach(function (plat) {
-            var caption = entry.captions[plat.key];
-            if (typeof caption !== "string") return;
-
-            var row = document.createElement("div");
-            row.className = "share-row";
-
-            var head = document.createElement("div");
-            head.className = "share-row-head";
-
-            var name = document.createElement("span");
-            name.className = "share-plat";
-            name.textContent = plat.label;
-            var fmt = document.createElement("span");
-            fmt.className = "fmt";
-            fmt.textContent = plat.fmt;
-            name.appendChild(fmt);
-
-            var posted = document.createElement("button");
-            posted.className = "posted-btn";
-            posted.type = "button";
-            var setPostedLabel = function () {
-              var on = localStorage.getItem(pkey(ep, plat.key)) === "1";
-              posted.classList.toggle("posted", on);
-              posted.textContent = on ? "Posted ✓" : "Not posted";
-            };
-            posted.addEventListener("click", function () {
-              var on = localStorage.getItem(pkey(ep, plat.key)) === "1";
-              localStorage.setItem(pkey(ep, plat.key), on ? "0" : "1");
-              setPostedLabel();
-            });
-            setPostedLabel();
-
-            head.appendChild(name);
-            head.appendChild(posted);
-
-            var ta = document.createElement("textarea");
-            ta.className = "share-cap";
-            ta.readOnly = true;
-            ta.rows = 4;
-            ta.value = caption;                            // textContent-safe assignment
-
-            var actions = document.createElement("div");
-            actions.className = "share-actions";
-
-            var copy = document.createElement("button");
-            copy.type = "button";
-            copy.textContent = "Copy caption";
-            copy.addEventListener("click", function () {
-              var done = function () { copy.textContent = "Copied ✓"; setTimeout(function () { copy.textContent = "Copy caption"; }, 1500); };
-              if (navigator.clipboard && navigator.clipboard.writeText) {
-                navigator.clipboard.writeText(ta.value).then(done, function () { ta.select(); done(); });
-              } else { ta.select(); try { document.execCommand("copy"); } catch (e) {} done(); }
-            });
-
-            actions.appendChild(copy);
-
-            if (plat.fmt === "9:16") {
-              // Vertical platforms get the 9:16 cut from R2 (not committed to git).
-              if (entry.v916) {
-                var dl = document.createElement("a");
-                dl.href = entry.v916;
-                dl.target = "_blank";
-                dl.rel = "noopener";
-                dl.setAttribute("download", "");
-                dl.textContent = "Download 9:16";
-                actions.appendChild(dl);
-              } else {
-                var soon = document.createElement("span");
-                soon.className = "share-soon";
-                soon.textContent = "9:16 uploading soon";
-                actions.appendChild(soon);
-              }
-            } else {
-              // Feed platforms use the 4:5 clip hosted on the site (true same-origin download).
-              var dl45 = document.createElement("a");
-              dl45.href = entry.file;
-              dl45.setAttribute("download", "");
-              dl45.textContent = "Download 4:5";
-              actions.appendChild(dl45);
-            }
-
-            row.appendChild(head);
-            row.appendChild(ta);
-            row.appendChild(actions);
-            body.appendChild(row);
-          });
-
-          share.appendChild(toggle);
-          share.appendChild(body);
-          bodyEl.appendChild(share);
+      PLATFORMS.forEach(function (plat) {
+        var caption = caps[plat.key];
+        var row = el("div", "share-row");
+        var head = el("div", "share-row-head");
+        var name = el("span", "share-plat", plat.label);
+        name.appendChild(el("span", "fmt", plat.fmt));
+        var posted = el("button", "posted-btn"); posted.type = "button";
+        var setPostedLabel = function () {
+          var on = localStorage.getItem(pkey(ep, plat.key)) === "1";
+          posted.classList.toggle("posted", on);
+          posted.textContent = on ? "Posted ✓" : "Not posted";
+        };
+        posted.addEventListener("click", function () {
+          var on = localStorage.getItem(pkey(ep, plat.key)) === "1";
+          localStorage.setItem(pkey(ep, plat.key), on ? "0" : "1");
+          setPostedLabel();
         });
-      })
-      .catch(function () { /* no share kit available — leave cards unchanged */ });
+        setPostedLabel();
+        head.appendChild(name); head.appendChild(posted);
+
+        var ta = el("textarea", "share-cap"); ta.readOnly = true; ta.rows = 4;
+        if (typeof caption === "string") { ta.value = caption; }
+        else { ta.placeholder = "(caption coming soon)"; }
+
+        var actions = el("div", "share-actions");
+        var copy = el("button", null, "Copy caption"); copy.type = "button";
+        copy.addEventListener("click", function () {
+          if (!ta.value) return;
+          var done = function () { copy.textContent = "Copied ✓"; setTimeout(function () { copy.textContent = "Copy caption"; }, 1500); };
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(ta.value).then(done, function () { ta.select(); done(); });
+          } else { ta.select(); try { document.execCommand("copy"); } catch (e) {} done(); }
+        });
+        actions.appendChild(copy);
+
+        if (plat.fmt === "9:16") {
+          if (entry.v916) {
+            var dl = document.createElement("a");
+            dl.href = entry.v916; dl.target = "_blank"; dl.rel = "noopener";
+            dl.setAttribute("download", ""); dl.textContent = "Download 9:16";
+            actions.appendChild(dl);
+          } else {
+            actions.appendChild(el("span", "share-soon", "9:16 uploading soon"));
+          }
+        } else {
+          var dl45 = document.createElement("a");
+          dl45.href = entry.file; dl45.setAttribute("download", ""); dl45.textContent = "Download 4:5";
+          actions.appendChild(dl45);
+        }
+        row.appendChild(head); row.appendChild(ta); row.appendChild(actions);
+        body.appendChild(row);
+      });
+      share.appendChild(toggle); share.appendChild(body);
+      return share;
+    }
+
+    function episodeCard(ep, captions) {
+      var card = el("div", "clip");
+      card.appendChild(videoEl(ep.poster, ep.file));
+      var b = el("div", "clip-body");
+      b.appendChild(el("span", "clip-ep", ep.ep));
+      var title = el("div", "clip-title"); title.textContent = ep.title; b.appendChild(title);
+      var desc = el("p", "clip-desc"); desc.innerHTML = ep.desc; b.appendChild(desc); // trusted catalog HTML (<code>)
+      b.appendChild(shareKit(ep.ep, ep, captions ? captions[ep.ep] : null));
+      card.appendChild(b);
+      return card;
+    }
+
+    function rigCard(x) {
+      var card = el("div", "video-card");
+      var v = videoEl(x.poster, x.file);
+      v.appendChild(document.createTextNode("Your browser doesn't support embedded video — "));
+      var fb = document.createElement("a"); fb.href = x.file; fb.textContent = "download the clip"; v.appendChild(fb);
+      card.appendChild(v);
+      var body = el("div", "video-body");
+      if (x.badge) body.appendChild(el("span", "video-badge", x.badge));
+      var t = el("div", "video-title"); t.textContent = x.title; body.appendChild(t);
+      var d = el("p", "video-desc"); d.innerHTML = x.desc; body.appendChild(d);
+      if (x.links && x.links.length) {
+        var links = el("div", "video-links");
+        x.links.forEach(function (l) {
+          var a = document.createElement("a"); a.href = l.href; a.target = "_blank"; a.rel = "noopener";
+          a.textContent = l.label; links.appendChild(a);
+        });
+        body.appendChild(links);
+      }
+      card.appendChild(body);
+      return card;
+    }
+
+    Promise.all([
+      fetch("videos/catalog.json", { cache: "no-cache" }).then(function (r) { return r.ok ? r.json() : null; }),
+      fetch("videos/captions.json", { cache: "no-cache" }).then(function (r) { return r.ok ? r.json() : {}; })
+    ]).then(function (res) {
+      var catalog = res[0], captions = res[1] || {};
+      if (!catalog || !catalog.claude_code) { if (grid) grid.textContent = "Catalog unavailable."; return; }
+      var cc = catalog.claude_code;
+      var meta = document.getElementById("cc-meta");
+      if (meta) meta.textContent = cc.meta || "";
+      (cc.episodes || []).forEach(function (ep) { grid.appendChild(episodeCard(ep, captions)); });
+      (catalog.extras || []).forEach(function (x) { rigBox.appendChild(rigCard(x)); });
+    }).catch(function () { if (grid) grid.textContent = "Catalog failed to load."; });
   })();
   </script>
 
