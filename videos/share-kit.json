@@ -258,5 +258,45 @@
       "tiktok": "stop waiting on long commands. run them in the background\n\n#claudecode #ai #coding #developer #tech #softwareengineer #vibecoding"
     },
     "v916": "videos/claude-ep31-916.mp4"
+  },
+  "Ep 32": {
+    "file": "videos/claude-ep32-45.mp4",
+    "captions": {
+      "youtube": "claude only sees the directory you launched it in. Pass --add-dir ../lib at startup and it can read and edit that sibling tree too (paths validated first). Persist with permissions.additionalDirectories.\n\nFollow @RuntheDocs for a daily Claude Code tip.\n\n#ClaudeCode #AI #DevTools #CLI",
+      "linkedin": "One repo is rarely enough. claude --add-dir ../lib gives Claude Code a second working directory at launch — read and edit it under the same permission rules, with each path validated before it starts.\n\n#ClaudeCode #DeveloperTools #AI",
+      "x": "claude --add-dir ../lib gives Claude Code a second working directory — read + edit a sibling tree under the same rules. Persist via permissions.additionalDirectories.\n\n#ClaudeCode #DevTools",
+      "tiktok": "give claude a second working directory at launch: --add-dir\n\n#claudecode #ai #coding #developer #tech #softwareengineer #vibecoding"
+    },
+    "v916": "videos/claude-ep32-916.mp4"
+  },
+  "Ep 33": {
+    "file": "videos/claude-ep33-45.mp4",
+    "captions": {
+      "youtube": "A long CLAUDE.md means weaker adherence. Reference another file with @path and Claude expands it into context at launch, alongside the CLAUDE.md that points to it. Relative + absolute, up to four hops; backtick to keep a path literal.\n\nFollow @RuntheDocs for a daily Claude Code tip.\n\n#ClaudeCode #AI #DevTools",
+      "linkedin": "Split a giant CLAUDE.md into modular files. Reference another file with @path and Claude loads it at launch alongside the CLAUDE.md that imports it — relative or absolute paths, nesting up to four hops, backtick to keep a path literal.\n\n#ClaudeCode #DeveloperTools #AI",
+      "x": "Split a huge CLAUDE.md: @path imports another file into context at launch. Relative + absolute, up to four hops, backtick to keep it literal.\n\n#ClaudeCode #DevTools",
+      "tiktok": "CLAUDE.md getting huge? split it with @path imports\n\n#claudecode #ai #coding #developer #tech #softwareengineer #vibecoding"
+    },
+    "v916": "videos/claude-ep33-916.mp4"
+  },
+  "Ep 34": {
+    "file": "videos/claude-ep34-45.mp4",
+    "captions": {
+      "youtube": "claude -p prints text, but scripts want data. Add --output-format json for a structured envelope — the answer in .result, plus session_id and total_cost_usd. Pipe to jq -r '.result' to pull just the answer.\n\nFollow @RuntheDocs for a daily Claude Code tip.\n\n#ClaudeCode #AI #DevTools #CLI",
+      "linkedin": "Make Claude Code scriptable: claude -p \"…\" --output-format json returns a structured envelope — the text answer in .result, plus session_id and total_cost_usd. Pipe through jq -r '.result' to pull just the answer for your pipeline.\n\n#ClaudeCode #DeveloperTools #AI",
+      "x": "claude -p \"…\" --output-format json | jq -r '.result' — a structured envelope for scripts: answer in .result, plus session_id + total_cost_usd.\n\n#ClaudeCode #DevTools",
+      "tiktok": "pipe claude's output as JSON for scripts: --output-format json | jq\n\n#claudecode #ai #coding #developer #tech #softwareengineer #vibecoding"
+    },
+    "v916": "videos/claude-ep34-916.mp4"
+  },
+  "Ep 35": {
+    "file": "videos/claude-ep35-45.mp4",
+    "captions": {
+      "youtube": "Need a record of what Claude just did? /export saved-chat.txt writes the whole conversation to a plain-text file — no dialog. Bare /export opens a dialog to copy or save. Drop the file in a PR or ticket as reproducible context.\n\nFollow @RuntheDocs for a daily Claude Code tip.\n\n#ClaudeCode #AI #DevTools",
+      "linkedin": "/export saved-chat.txt writes a Claude Code conversation straight to a plain-text file — no dialog, no copy-paste. Bare /export opens a dialog to copy to clipboard or save. Reproducible context for a PR, a ticket, or a teammate.\n\n#ClaudeCode #DeveloperTools #AI",
+      "x": "/export saved-chat.txt writes the whole Claude Code conversation to a plain-text file — no dialog. Reproducible context for a PR or ticket.\n\n#ClaudeCode #DevTools",
+      "tiktok": "save a claude code conversation to a file: /export saved-chat.txt\n\n#claudecode #ai #coding #developer #tech #softwareengineer #vibecoding"
+    },
+    "v916": "videos/claude-ep35-916.mp4"
   }
 }
