@@ -117,6 +117,22 @@
       "url": "https://www.youtube.com/watch?v=0N91Z91x0kM"
     }
   },
+  "Ep 26": {
+    "youtube": {
+      "posted_at": null,
+      "publish_at": "2026-07-03T16:00:00Z",
+      "status": "scheduled",
+      "url": "https://www.youtube.com/watch?v=QHSQLO1cnD0"
+    }
+  },
+  "Ep 28": {
+    "youtube": {
+      "posted_at": null,
+      "publish_at": "2026-07-01T19:00:00Z",
+      "status": "scheduled",
+      "url": "https://www.youtube.com/watch?v=1--wzj52nl0"
+    }
+  },
   "Ep 29": {
     "youtube": {
       "posted_at": null,
@@ -137,6 +153,22 @@
       "publish_at": "2026-06-07T21:56:59Z",
       "status": "posted",
       "url": "https://www.youtube.com/watch?v=k0p1V7T3D9E"
+    }
+  },
+  "Ep 30": {
+    "youtube": {
+      "posted_at": null,
+      "publish_at": "2026-06-30T16:00:00Z",
+      "status": "scheduled",
+      "url": "https://www.youtube.com/watch?v=HNi4_Hbs-Ys"
+    }
+  },
+  "Ep 31": {
+    "youtube": {
+      "posted_at": null,
+      "publish_at": "2026-07-02T13:00:00Z",
+      "status": "scheduled",
+      "url": "https://www.youtube.com/watch?v=jOAUqTo263I"
     }
   },
   "Ep 4": {

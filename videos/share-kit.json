@@ -218,5 +218,45 @@
       "tiktok": "make claude think harder: --effort high, or just type ultrathink in your prompt\n\n#claudecode #ai #coding #developer #tech #softwareengineer #vibecoding"
     },
     "v916": "videos/claude-ep29-916.mp4"
+  },
+  "Ep 26": {
+    "file": "videos/claude-ep26-45.mp4",
+    "captions": {
+      "youtube": "A marketplace is a catalog of plugins. Add one with: claude plugin marketplace add owner/repo. Then install: claude plugin install name@marketplace. Plugin skills are namespaced, like commit-commands:commit.\n\nFollow @RuntheDocs for a daily Claude Code tip.\n\n#ClaudeCode #AI #DevTools #CLI #Plugins",
+      "linkedin": "Install a Claude Code plugin in two commands.\n\nA marketplace is a catalog of plugins someone shared. Register it with claude plugin marketplace add owner/repo, then claude plugin install name@marketplace (user scope by default). Plugin skills are namespaced by plugin, like commit-commands:commit.\n\n#ClaudeCode #DeveloperTools #AI",
+      "x": "Install a Claude Code plugin in two commands: claude plugin marketplace add owner/repo, then claude plugin install name@marketplace. Skills are namespaced, like commit-commands:commit.\n\n#ClaudeCode #DevTools",
+      "tiktok": "add a marketplace, install a plugin, done. two commands\n\n#claudecode #ai #coding #developer #tech #softwareengineer #vibecoding"
+    },
+    "v916": "videos/claude-ep26-916.mp4"
+  },
+  "Ep 28": {
+    "file": "videos/claude-ep28-45.mp4",
+    "captions": {
+      "youtube": "Output styles rewrite Claude Code's system prompt — its role, tone, and output format, not what it knows. Built in: Default, Proactive, Explanatory, Learning. Set outputStyle in .claude/settings.local.json; write your own in .claude/output-styles.\n\nFollow @RuntheDocs for a daily Claude Code tip.\n\n#ClaudeCode #AI #DevTools",
+      "linkedin": "Change how Claude Code responds, not what it knows.\n\nOutput styles rewrite the system prompt — role, tone, output format. Four are built in: Default, Proactive, Explanatory, Learning. Set the outputStyle setting (it loads at session start), or write your own as a Markdown file in .claude/output-styles.\n\n#ClaudeCode #DeveloperTools #AI",
+      "x": "Output styles reshape how Claude Code responds — role, tone, format — not what it knows. Built in: Default, Proactive, Explanatory, Learning. Set outputStyle or write your own.\n\n#ClaudeCode #DevTools",
+      "tiktok": "change how claude talks, not what it knows. output styles\n\n#claudecode #ai #coding #developer #tech #softwareengineer #vibecoding"
+    },
+    "v916": "videos/claude-ep28-916.mp4"
+  },
+  "Ep 30": {
+    "file": "videos/claude-ep30-45.mp4",
+    "captions": {
+      "youtube": "Need a project rule to stick across sessions? Just tell Claude: add this to CLAUDE.md. It writes straight into the project file, loaded fresh into every future session. Note: 'remember that...' routes to auto memory instead.\n\nFollow @RuntheDocs for a daily Claude Code tip.\n\n#ClaudeCode #AI #DevTools",
+      "linkedin": "Add a rule to CLAUDE.md without leaving the chat.\n\nNeed a convention to stick across sessions? Just tell Claude \"add this to CLAUDE.md\" mid-conversation — it writes straight into the project file, which is read at the start of every future session. (\"remember that...\" routes to auto memory instead.)\n\n#ClaudeCode #DeveloperTools #AI",
+      "x": "Want a project rule to stick? Tell Claude \"add this to CLAUDE.md\" mid-chat — it writes into the file, loaded every future session. ('remember that...' goes to auto memory.)\n\n#ClaudeCode #DevTools",
+      "tiktok": "tell claude: add this to CLAUDE.md. it sticks across sessions\n\n#claudecode #ai #coding #developer #tech #softwareengineer #vibecoding"
+    },
+    "v916": "videos/claude-ep30-916.mp4"
+  },
+  "Ep 31": {
+    "file": "videos/claude-ep31-45.mp4",
+    "captions": {
+      "youtube": "A long command shouldn't freeze your chat. Ask Claude to run it in the background — it returns a task ID and keeps working, writing output to a file it reads back with the Read tool. Or press Ctrl+B to background a running command.\n\nFollow @RuntheDocs for a daily Claude Code tip.\n\n#ClaudeCode #AI #DevTools #CLI",
+      "linkedin": "Run a long command without blocking Claude Code.\n\nAsk Claude to run it in the background: it returns a task ID and keeps responding, writing output to a file it reads back with the Read tool. Or press Ctrl+B to push a running command into the background.\n\n#ClaudeCode #DeveloperTools #AI",
+      "x": "A long command shouldn't freeze your chat. Ask Claude to run it in the background — it returns a task ID and keeps working, then reads the output file back. Or press Ctrl+B.\n\n#ClaudeCode #DevTools",
+      "tiktok": "stop waiting on long commands. run them in the background\n\n#claudecode #ai #coding #developer #tech #softwareengineer #vibecoding"
+    },
+    "v916": "videos/claude-ep31-916.mp4"
   }
 }
