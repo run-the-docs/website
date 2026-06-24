@@ -384,6 +384,50 @@
           </div>
         </div>
 
+        <div class="clip">
+          <video controls preload="metadata" poster="videos/claude-ep32-poster.jpg" playsinline>
+            <source src="videos/claude-ep32-45.mp4" type="video/mp4" />
+          </video>
+          <div class="clip-body">
+            <span class="clip-ep">Ep 32</span>
+            <div class="clip-title">Multiple directories (--add-dir)</div>
+            <p class="clip-desc">Launch with <code>claude --add-dir ../lib</code> and Claude can read and edit a sibling directory too — same permission rules, paths validated up front.</p>
+          </div>
+        </div>
+
+        <div class="clip">
+          <video controls preload="metadata" poster="videos/claude-ep33-poster.jpg" playsinline>
+            <source src="videos/claude-ep33-45.mp4" type="video/mp4" />
+          </video>
+          <div class="clip-body">
+            <span class="clip-ep">Ep 33</span>
+            <div class="clip-title">Modular CLAUDE.md (@imports)</div>
+            <p class="clip-desc">Split a huge CLAUDE.md: reference another file with <code>@path</code> and Claude loads it at launch. Relative + absolute, nesting up to four hops.</p>
+          </div>
+        </div>
+
+        <div class="clip">
+          <video controls preload="metadata" poster="videos/claude-ep34-poster.jpg" playsinline>
+            <source src="videos/claude-ep34-45.mp4" type="video/mp4" />
+          </video>
+          <div class="clip-body">
+            <span class="clip-ep">Ep 34</span>
+            <div class="clip-title">Claude as JSON</div>
+            <p class="clip-desc">Pipe <code>claude -p "…" --output-format json | jq -r '.result'</code> — scripts get a structured envelope: the answer in <code>.result</code>, plus session_id and cost.</p>
+          </div>
+        </div>
+
+        <div class="clip">
+          <video controls preload="metadata" poster="videos/claude-ep35-poster.jpg" playsinline>
+            <source src="videos/claude-ep35-45.mp4" type="video/mp4" />
+          </video>
+          <div class="clip-body">
+            <span class="clip-ep">Ep 35</span>
+            <div class="clip-title">Export a chat (/export)</div>
+            <p class="clip-desc"><code>/export saved-chat.txt</code> writes the whole conversation to a plain-text file — no dialog. Drop it in a PR or ticket as reproducible context.</p>
+          </div>
+        </div>
+
       </div>
     </section>
 
