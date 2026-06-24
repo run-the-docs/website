@@ -208,5 +208,15 @@
       "tiktok": "stop pasting terminal output into Claude. just hit ! and run the command inline\n\n#claudecode #ai #coding #developer #tech #softwareengineer #vibecoding"
     },
     "v916": "videos/claude-ep24-916.mp4"
+  },
+  "Ep 29": {
+    "file": "videos/claude-ep29-45.mp4",
+    "captions": {
+      "youtube": "Extended thinking is on by default. Dial it with --effort (low to max, default high), or drop ultrathink into a prompt for a one-off boost. Heads up: 'think hard' is just text now — only ultrathink is recognized.\n\nFollow @RuntheDocs for a daily Claude Code tip.\n\n#ClaudeCode #AI #Coding #DevTools #CLI",
+      "linkedin": "Make Claude Code think harder before it acts.\n\nExtended thinking is on by default. Dial it with --effort (low to max, default high). For a one-off boost on a single prompt, just drop the word ultrathink into it.\n\nOne heads-up: 'think', 'think hard' and 'think more' are plain prompt text now — only ultrathink is recognized as a keyword.\n\n#ClaudeCode #DeveloperTools #AI",
+      "x": "Make Claude Code think harder: set --effort (low to max), or drop ultrathink in a prompt for a one-off boost. Note: 'think hard' is just text now — only ultrathink is a keyword.\n\n#ClaudeCode #DevTools",
+      "tiktok": "make claude think harder: --effort high, or just type ultrathink in your prompt\n\n#claudecode #ai #coding #developer #tech #softwareengineer #vibecoding"
+    },
+    "v916": "videos/claude-ep29-916.mp4"
   }
 }
