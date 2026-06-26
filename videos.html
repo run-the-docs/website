@@ -95,7 +95,7 @@
 
     <section class="series">
       <h2 class="series-title cc">claude code</h2>
-      <p class="series-meta">31 episodes · code.claude.com/docs · self-hosted clips (also on LinkedIn)</p>
+      <p class="series-meta">33 episodes · code.claude.com/docs · self-hosted clips (also on LinkedIn)</p>
       <div class="grid">
 
         <div class="clip">
@@ -436,6 +436,28 @@
             <span class="clip-ep">Ep 37</span>
             <div class="clip-title">Steer one run</div>
             <p class="clip-desc">CLAUDE.md is forever — but to steer a single run, add <code>--append-system-prompt "…"</code> to a <code>claude -p</code> call. A one-off rule (here: answer in TypeScript, ELI5 note per function) that nothing in your repo records; run again without the flag and you're back to default.</p>
+          </div>
+        </div>
+
+        <div class="clip">
+          <video controls preload="metadata" poster="videos/claude-ep22-poster.jpg" playsinline>
+            <source src="videos/claude-ep22-45.mp4" type="video/mp4" />
+          </video>
+          <div class="clip-body">
+            <span class="clip-ep">Ep 22</span>
+            <div class="clip-title">Parallel worktrees</div>
+            <p class="clip-desc">Two Claude sessions on one repo can collide. <code>claude --worktree NAME</code> spins up an isolated git worktree under <code>.claude/worktrees/</code> on a fresh branch — <code>git worktree list</code> shows both side by side. A different name in another terminal = parallel, isolated work.</p>
+          </div>
+        </div>
+
+        <div class="clip">
+          <video controls preload="metadata" poster="videos/claude-ep27-poster.jpg" playsinline>
+            <source src="videos/claude-ep27-45.mp4" type="video/mp4" />
+          </video>
+          <div class="clip-body">
+            <span class="clip-ep">Ep 27</span>
+            <div class="clip-title">A subagent in one command</div>
+            <p class="clip-desc"><code>/agents</code> is a guided wizard; <code>--agents</code> is its headless twin — pass a name, description, tools, model, and system prompt as JSON. Then just ask, and Claude delegates the task straight to the subagent.</p>
           </div>
         </div>
 

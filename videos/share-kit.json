@@ -308,5 +308,25 @@
       "tiktok": "steer one claude run only — nothing saved:\nclaude -p \"...\" --append-system-prompt \"always answer in typescript\"\n\n#claudecode #ai #coding #developer #tech #softwareengineer #vibecoding"
     },
     "v916": "videos/claude-ep37-916.mp4"
+  },
+  "Ep 22": {
+    "file": "videos/claude-ep22-45.mp4",
+    "captions": {
+      "youtube": "Running two Claude Code sessions on one repo? Their edits can collide. claude --worktree NAME spins up an isolated git worktree on a fresh branch — git worktree list shows your main checkout and the new one side by side. Use a different name in another terminal for true parallel work.\n\nFollow @RuntheDocs for a daily Claude Code tip.\n\n#ClaudeCode #AI #DevTools",
+      "linkedin": "Two Claude Code sessions on one repo can step on each other. claude --worktree NAME spins up an isolated git worktree under .claude/worktrees/ on a fresh branch, so each session gets its own checkout. git worktree list shows them side by side — run a different name in another terminal for true parallel work.\n\n#ClaudeCode #DeveloperTools #AI",
+      "x": "Run two Claude Code sessions on one repo without collisions: claude --worktree NAME gives each its own isolated git worktree + branch. git worktree list shows both.\n\n#ClaudeCode #DevTools",
+      "tiktok": "run two claude sessions on one repo, no collisions:\nclaude --worktree NAME\n\n#claudecode #ai #coding #developer #git #softwareengineer #vibecoding"
+    },
+    "v916": "videos/claude-ep22-916.mp4"
+  },
+  "Ep 27": {
+    "file": "videos/claude-ep27-45.mp4",
+    "captions": {
+      "youtube": "Subagents are helpers Claude spawns with their own context, tools, and prompt. The easy way to build one is /agents — a guided wizard. Want it scriptable? The --agents flag takes the same fields as JSON: a name, a description, the tools it may use, a model, and its system prompt. Then you just ask, and Claude delegates the task straight to it.\n\nFollow @RuntheDocs for a daily Claude Code tip.\n\n#ClaudeCode #AI #DevTools",
+      "linkedin": "/agents opens a guided wizard to build a Claude Code subagent. The scriptable twin is --agents: pass the same fields as JSON — name, description, the tools it may use, a model, and its system prompt — in one command. Then you just ask, and Claude delegates straight to the subagent.\n\n#ClaudeCode #DeveloperTools #AI",
+      "x": "Build a Claude Code subagent in one command: claude --agents '{...name, tools, model, prompt...}'. Then just ask — Claude delegates to it. (/agents is the wizard version.)\n\n#ClaudeCode #DevTools",
+      "tiktok": "spin up a claude subagent in one command — no wizard:\nclaude --agents '{...}'\n\n#claudecode #ai #coding #developer #subagents #softwareengineer #vibecoding"
+    },
+    "v916": "videos/claude-ep27-916.mp4"
   }
 }

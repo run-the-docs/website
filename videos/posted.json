@@ -101,6 +101,14 @@
       "url": "https://www.youtube.com/watch?v=UUBbF4sj2lM"
     }
   },
+  "Ep 22": {
+    "youtube": {
+      "posted_at": null,
+      "publish_at": "2026-07-09T13:00:00Z",
+      "status": "scheduled",
+      "url": "https://www.youtube.com/watch?v=ss8e8MjPISw"
+    }
+  },
   "Ep 23": {
     "youtube": {
       "posted_at": null,
@@ -123,6 +131,14 @@
       "publish_at": "2026-06-29T13:00:00Z",
       "status": "scheduled",
       "url": "https://www.youtube.com/watch?v=QHSQLO1cnD0"
+    }
+  },
+  "Ep 27": {
+    "youtube": {
+      "posted_at": null,
+      "publish_at": "2026-07-10T16:00:00Z",
+      "status": "scheduled",
+      "url": "https://www.youtube.com/watch?v=xOL1dVTQp_c"
     }
   },
   "Ep 28": {
