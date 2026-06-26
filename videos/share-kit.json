@@ -348,5 +348,15 @@
       "tiktok": "run a command when claude finishes a turn — the Stop hook:\n.claude/settings.json → hooks → Stop\n\n#claudecode #ai #coding #developer #hooks #softwareengineer #vibecoding"
     },
     "v916": "videos/claude-ep36-916.mp4"
+  },
+  "Ep 25": {
+    "file": "videos/claude-ep25-45.mp4",
+    "captions": {
+      "youtube": "Claude Code can run up to 2.5x faster. Turn it on with /fast on — fast mode runs the same Opus model with quicker tokens, and a bolt marks your status bar. The trade-off is about double the per-token cost ($10/$50 per Mtok). /fast off to slow back down.\n\nFollow @RuntheDocs for a daily Claude Code tip.\n\n#ClaudeCode #AI #DevTools",
+      "linkedin": "/fast on makes Claude Code run up to 2.5x faster — the same Opus model, just quicker tokens, with a bolt in the status bar. The trade-off is roughly double the per-token cost ($10/$50 per Mtok); /fast off slows back down. CLI only, requires usage credits.\n\n#ClaudeCode #DeveloperTools #AI",
+      "x": "Run Claude Code up to 2.5x faster: /fast on. Same Opus model, quicker tokens, ~2x the per-token cost. /fast off to slow back down.\n\n#ClaudeCode #DevTools",
+      "tiktok": "make claude code 2.5x faster:\n/fast on\n\n#claudecode #ai #coding #developer #tech #softwareengineer #vibecoding"
+    },
+    "v916": "videos/claude-ep25-916.mp4"
   }
 }
