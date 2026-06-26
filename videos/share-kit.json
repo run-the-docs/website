@@ -298,5 +298,15 @@
       "tiktok": "save a claude code conversation to a file: /export saved-chat.txt\n\n#claudecode #ai #coding #developer #tech #softwareengineer #vibecoding"
     },
     "v916": "videos/claude-ep35-916.mp4"
+  },
+  "Ep 37": {
+    "file": "videos/claude-ep37-45.mp4",
+    "captions": {
+      "youtube": "CLAUDE.md is forever and output styles persist — but what if you only want to steer ONE run? Add --append-system-prompt \"…\" to a headless claude -p call. Here: always answer in TypeScript, with a plain-English ELI5 comment above every function. The answer obeys the rule, and nothing is written to your repo. Run it again without the flag and you're back to default.\n\nFollow @RuntheDocs for a daily Claude Code tip.\n\n#ClaudeCode #AI #DevTools",
+      "linkedin": "CLAUDE.md is forever; output styles persist. But sometimes you want to steer a single run and leave no trace. claude -p \"…\" --append-system-prompt \"…\" appends a one-off system instruction to one headless run — here: always answer in TypeScript, with an ELI5 note above each function. The answer obeys the rule, nothing is written to your project, and the next run without the flag is back to default.\n\n#ClaudeCode #DeveloperTools #AI",
+      "x": "Steer ONE Claude Code run, no trace: claude -p \"…\" --append-system-prompt \"answer in TypeScript, ELI5 note per function\". Nothing written to your repo; the next run is back to default.\n\n#ClaudeCode #DevTools",
+      "tiktok": "steer one claude run only — nothing saved:\nclaude -p \"...\" --append-system-prompt \"always answer in typescript\"\n\n#claudecode #ai #coding #developer #tech #softwareengineer #vibecoding"
+    },
+    "v916": "videos/claude-ep37-916.mp4"
   }
 }
