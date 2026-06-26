@@ -71,6 +71,14 @@
       "url": "https://www.youtube.com/watch?v=0zY7L-mL97Y"
     }
   },
+  "Ep 18": {
+    "youtube": {
+      "posted_at": null,
+      "publish_at": "2026-07-12T13:00:00Z",
+      "status": "scheduled",
+      "url": "https://www.youtube.com/watch?v=lBKOiEV3oGc"
+    }
+  },
   "Ep 19": {
     "youtube": {
       "posted_at": null,
@@ -219,10 +227,18 @@
       "url": "https://www.youtube.com/watch?v=q2FMudojPp0"
     }
   },
-  "Ep 37": {
+  "Ep 36": {
     "youtube": {
       "posted_at": null,
       "publish_at": "2026-07-10T16:00:00Z",
+      "status": "scheduled",
+      "url": "https://www.youtube.com/watch?v=S3iaX_ur3YM"
+    }
+  },
+  "Ep 37": {
+    "youtube": {
+      "posted_at": null,
+      "publish_at": "2026-07-11T19:00:00Z",
       "status": "scheduled",
       "url": "https://www.youtube.com/watch?v=pjZIeTj6J3M"
     }

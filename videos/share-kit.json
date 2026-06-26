@@ -328,5 +328,25 @@
       "tiktok": "spin up a claude subagent in one command — no wizard:\nclaude --agents '{...}'\n\n#claudecode #ai #coding #developer #subagents #softwareengineer #vibecoding"
     },
     "v916": "videos/claude-ep27-916.mp4"
+  },
+  "Ep 18": {
+    "file": "videos/claude-ep18-45.mp4",
+    "captions": {
+      "youtube": "Tired of approving every edit? Press Shift+Tab in Claude Code to cycle permission modes. Accept edits lets Claude write files with no prompts; plan mode makes it research and propose without touching anything; default asks first. Your current mode always shows in the status bar — three modes, one keystroke.\n\nFollow @RuntheDocs for a daily Claude Code tip.\n\n#ClaudeCode #AI #DevTools",
+      "linkedin": "Stop approving every single edit in Claude Code. Shift+Tab cycles permission modes: accept edits (Claude writes files, no prompts), plan (it researches and proposes, never edits), and default (asks first). Your current mode always shows in the status bar — three modes, one keystroke.\n\n#ClaudeCode #DeveloperTools #AI",
+      "x": "Stop approving every edit in Claude Code: Shift+Tab cycles permission modes — accept edits, plan, default. Your mode shows in the status bar.\n\n#ClaudeCode #DevTools",
+      "tiktok": "stop approving every edit in claude code:\nShift+Tab cycles accept-edits / plan / default\n\n#claudecode #ai #coding #developer #tech #softwareengineer #vibecoding"
+    },
+    "v916": "videos/claude-ep18-916.mp4"
+  },
+  "Ep 36": {
+    "file": "videos/claude-ep36-45.mp4",
+    "captions": {
+      "youtube": "The Stop hook runs a command the instant Claude Code finishes responding. Add a Stop entry under hooks in .claude/settings.json (no matcher, so it fires every turn), point it at a script, and Claude runs it on every finish. Wire it to a notification, a test run, or a lint gate — exit 2 even keeps Claude working until your check passes.\n\nFollow @RuntheDocs for a daily Claude Code tip.\n\n#ClaudeCode #AI #DevTools",
+      "linkedin": "Run a command the moment Claude Code finishes a turn: the Stop hook. Add a Stop entry under hooks in .claude/settings.json (it takes no matcher, so it fires every time), point it at a script, and Claude runs it on every finish. Notify, log, run tests, or gate on a lint check — exit 2 keeps Claude working until your check passes.\n\n#ClaudeCode #DeveloperTools #AI",
+      "x": "The Stop hook runs a command the moment Claude Code finishes a turn — add it under hooks in .claude/settings.json. Notify, log, test, or gate. Exit 2 keeps Claude working.\n\n#ClaudeCode #DevTools",
+      "tiktok": "run a command when claude finishes a turn — the Stop hook:\n.claude/settings.json → hooks → Stop\n\n#claudecode #ai #coding #developer #hooks #softwareengineer #vibecoding"
+    },
+    "v916": "videos/claude-ep36-916.mp4"
   }
 }
