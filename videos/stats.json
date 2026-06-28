@@ -84,16 +84,16 @@
     "youtube_id": "S8MTwUM56fM"
   },
   "Ep 15": {
-    "as_of": "2026-06-25T07:16:00Z",
+    "as_of": "2026-06-28T18:43:37Z",
     "avg_view_duration_seconds": null,
     "avg_view_percentage": null,
-    "comments": 0,
+    "comments": null,
     "ctr": null,
     "impressions": null,
-    "likes": 1,
+    "likes": null,
     "source": "watch-page",
     "subscribers_gained": null,
-    "views": 22,
+    "views": 49,
     "watch_time_minutes": null,
     "youtube_id": "9EfzD3xFIhI"
   },
@@ -224,16 +224,16 @@
     "youtube_id": "l8LjnU7ppiY"
   },
   "Ep 9": {
-    "as_of": "2026-06-25T07:05:32Z",
+    "as_of": "2026-06-28T18:43:37Z",
     "avg_view_duration_seconds": null,
     "avg_view_percentage": null,
-    "comments": 0,
+    "comments": null,
     "ctr": null,
     "impressions": null,
-    "likes": 2,
-    "source": "data-api",
+    "likes": null,
+    "source": "watch-page",
     "subscribers_gained": null,
-    "views": 314,
+    "views": 399,
     "watch_time_minutes": null,
     "youtube_id": "lTsqbIBeupc"
   },
